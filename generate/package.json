@@ -1,0 +1,38 @@
+{
+  "name": "@dbinfrago/station-vocabularies",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Linked data vocabularies for describing passenger railway stations, following the NeTEx/Transmodel standards.",
+  "license": "Apache-2.0",
+  "author": "Julius Tens <julius.tens@deutschebahn.com>",
+  "scripts": {
+    "build": "tsc",
+    "depcheck": "depcheck --ignores='tslib,ts-node'",
+    "fix": "npm run lint -- --fix",
+    "generate": "node --loader ts-node/esm --no-warnings=ExperimentalWarning src/index.ts",
+    "lint": "ts-standard src"
+  },
+  "type": "module",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "n3": "^1.20.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.7",
+    "@types/n3": "^1.16.4",
+    "@types/node": "^20.14.14",
+    "depcheck": "^1.4.7",
+    "ts-node": "^10.9.2",
+    "ts-standard": "^12.0.2",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "ts-standard": {
+    "ignore": [
+      "dist"
+    ]
+  }
+}

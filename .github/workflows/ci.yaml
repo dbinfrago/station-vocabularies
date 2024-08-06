@@ -1,0 +1,58 @@
+name: CI
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+      - name: Install dependencies
+        working-directory: ./generate
+        run: npx pnpm i
+      - name: Run linter
+        working-directory: ./generate
+        run: npx pnpm run lint
+        env:
+          CI: true
+      - name: Run depcheck
+        working-directory: ./generate
+        run: npx pnpm run depcheck
+        env:
+          CI: true
+      - name: Run build
+        working-directory: ./generate
+        run: npx pnpm run build
+        env:
+          CI: true
+      - name: Run generate
+        working-directory: ./generate
+        run: npx pnpm run generate && echo "ensuring that there are no un-commited changes to the ontology (make sure to run npm run generate before committing!)" && git diff --exit-code
+        env:
+          CI: true
+
+  publish:
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifacts
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "artifacts"
+      - id: deployment
+        uses: actions/deploy-pages@v4

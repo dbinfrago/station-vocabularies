@@ -1,0 +1,2007 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix schema: <http://schema.org/>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix tmfac: <https://w3id.org/transmodel/facilities#>.
+@prefix tmorg: <https://w3id.org/transmodel/organisations#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix netex: <https://lod.bahnhof.de/vocabulary/netex/>.
+@prefix bahnhof: <https://lod.bahnhof.de/vocabulary/db/>.
+
+netex:Access a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Access"@en;
+    schema:name "Access"@en.
+netex:AccessSpace a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Access space"@en;
+    schema:name "Access space"@en.
+netex:AccessVehicleEquipment a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Access vehicle equipment"@en;
+    schema:name "Access vehicle equipment"@en.
+netex:AccessibilityAssessment a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Accessibility assessment"@en;
+    schema:name "Accessibility assessment"@en.
+netex:AssistanceService a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Assistance service"@en;
+    schema:name "Assistance service"@en.
+netex:Authority a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Authority"@en;
+    schema:name "Authority"@en.
+netex:BoardingPosition a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Boarding position"@en;
+    schema:name "Boarding position"@en.
+netex:Branding a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Branding"@en;
+    schema:name "Branding"@en.
+netex:Centroid a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Centroid"@en;
+    schema:name "Centroid"@en.
+netex:CheckConstraint a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Check constraint"@en;
+    schema:name "Check constraint"@en.
+netex:ClassOfUse a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Class of use"@en;
+    schema:name "Class of use"@en.
+netex:Entity a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Entity"@en;
+    schema:name "Entity"@en.
+netex:Entrance a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Entrance"@en;
+    schema:name "Entrance"@en.
+netex:EntranceEquipment a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Entrance equipment"@en;
+    schema:name "Entrance equipment"@en.
+netex:EquipmentPlace a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Equipment place"@en;
+    schema:name "Equipment place"@en.
+netex:EscalatorEquipment a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Escalator equipment"@en;
+    schema:name "Escalator equipment"@en.
+netex:Level a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Level"@en;
+    schema:name "Level"@en.
+netex:LiftEquipment a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Lift equipment"@en;
+    schema:name "Lift equipment"@en.
+netex:LocalService a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Local service"@en;
+    schema:name "Local service"@en.
+netex:Locale a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Locale"@en;
+    schema:name "Locale"@en.
+netex:NavigationPath a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Navigation path"@en;
+    schema:name "Navigation path"@en.
+netex:Operator a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Operator"@en;
+    schema:name "Operator"@en.
+netex:Organisation a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Organisation"@en;
+    schema:name "Organisation"@en;
+    owl:sameAs tmorg:Organisation.
+netex:PassengerInformationEquipment a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Passenger information equipment"@en;
+    schema:name "Passenger information equipment"@en.
+netex:PathJunction a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Path junction"@en;
+    schema:name "Path junction"@en.
+netex:PathLink a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Path link"@en;
+    schema:name "Path link"@en.
+netex:Point a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Point"@en;
+    schema:name "Point"@en.
+netex:PostalAddress a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Postal address"@en;
+    schema:name "Postal address"@en.
+netex:PurposeOfGrouping a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Purpose of grouping"@en;
+    schema:name "Purpose of grouping"@en.
+netex:Quay a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Quay"@en;
+    schema:name "Quay"@en;
+    owl:sameAs tmfac:Quay;
+    rdfs:subClassOf netex:Site.
+netex:RampEquipment a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Ramp equipment"@en;
+    schema:name "Ramp equipment"@en.
+netex:RoadAddress a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Road address"@en;
+    schema:name "Road address"@en.
+netex:SanitaryEquipment a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Sanitary equipment"@en;
+    schema:name "Sanitary equipment"@en.
+netex:Site a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Site"@en;
+    schema:name "Site"@en;
+    owl:sameAs tmfac:Site.
+netex:SiteFacilitySet a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Site facility set"@en;
+    schema:name "Site facility set"@en.
+netex:StairFlight a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Stair flight"@en;
+    schema:name "Stair flight"@en.
+netex:StaircaseEquipment a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Staircase equipment"@en;
+    schema:name "Staircase equipment"@en.
+netex:StopPlace a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Stop place"@en;
+    schema:name "Stop place"@en;
+    owl:sameAs tmfac:StopPlace;
+    rdfs:subClassOf netex:Site;
+    owl:hasKey [
+  rdf:first bahnhof:evaId;
+  rdf:rest rdf:nil
+], [
+  rdf:first bahnhof:ifoptStopId;
+  rdf:rest rdf:nil
+], [
+  rdf:first bahnhof:ril100Id;
+  rdf:rest rdf:nil
+], [
+  rdf:first bahnhof:stadaId;
+  rdf:rest rdf:nil
+].
+netex:TariffZone a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Tariff zone"@en;
+    schema:name "Tariff zone"@en.
+netex:TopographicPlace a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Topographic place"@en;
+    schema:name "Topographic place"@en.
+netex:TransportOrganisation a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Transport organisation"@en;
+    schema:name "Transport organisation"@en.
+netex:TravelatorEquipment a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Travelator equipment"@en;
+    schema:name "Travelator equipment"@en.
+netex:TypeOfPlace a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Type of place"@en;
+    schema:name "Type of place"@en.
+netex:TypeOfZone a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Type of zone"@en;
+    schema:name "Type of zone"@en.
+netex:VehicleStoppingPlace a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Vehicle stopping place"@en;
+    schema:name "Vehicle stopping place"@en.
+netex:Zone a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Zone"@en;
+    schema:name "Zone"@en.
+netex:access a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Access"@en;
+    schema:name "Access"@en;
+    rdfs:comment "Access of entity."@en;
+    rdfs:range netex:Access;
+    schema:domainIncludes netex:StopPlace, netex:TopographicPlace.
+netex:accessMode a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Access mode"@en;
+    schema:name "Access mode"@en;
+    rdfs:comment "Access mode of entity."@en;
+    rdfs:range netex:AccessMode;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+netex:accessSpace a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Access space"@en;
+    schema:name "Access space"@en;
+    rdfs:comment "Access space of entity."@en;
+    rdfs:range netex:AccessSpace;
+    schema:domainIncludes netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+netex:accessibilityAssessment a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Accessibility assessment"@en;
+    schema:name "Accessibility assessment"@en;
+    rdfs:comment "Accessibility assessment of entity."@en;
+    rdfs:range netex:AccessibilityAssessment;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:Quay, netex:StopPlace.
+netex:additionalTopographicPlace a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Additional topographic place"@en;
+    schema:name "Additional topographic place"@en;
+    rdfs:comment "Additional topographic place of entity."@en;
+    rdfs:range netex:TopographicPlace;
+    schema:domainIncludes netex:StopPlace.
+netex:adjacentSite a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Adjacent site"@en;
+    schema:name "Adjacent site"@en;
+    rdfs:comment "Adjacent site of entity."@en;
+    rdfs:range netex:Site;
+    schema:domainIncludes netex:StopPlace.
+netex:alarmButton a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Alarm button"@en;
+    schema:name "Alarm button"@en;
+    rdfs:comment "Flag indicating if this entity has an alarm button (e.g. in a lift)."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:alightingUse a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Alighting use"@en;
+    schema:name "Alighting use"@en;
+    rdfs:comment "Alighting use of entity."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:Quay;
+    bahnhof:domainInDBStationsProfile netex:Quay.
+netex:allAreasWheelchairAccessible a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "All areas wheelchair accessible"@en;
+    schema:name "All areas wheelchair accessible"@en;
+    rdfs:comment "Flag indicating if all areas of the entity are wheelchair accessible."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:Quay, netex:StopPlace.
+netex:atCentre a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "At centre"@en;
+    schema:name "At centre"@en;
+    rdfs:comment "Flag indicating if the entity is located at the center of its topographic place."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:StopPlace.
+netex:attendant a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Attendant"@en;
+    schema:name "Attendant"@en;
+    rdfs:comment "Flag indicating if this entity has an attendant (e.g. in a lift)."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:audioAnnouncements a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Audio announcements"@en;
+    schema:name "Audio announcements"@en;
+    rdfs:comment "Flag indicating this entity has audio announcements (e.g. in a lift)."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:authority a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Authority"@en;
+    schema:name "Authority"@en;
+    rdfs:comment "Authority of entity."@en;
+    rdfs:range netex:Authority;
+    schema:domainIncludes netex:StopPlace.
+netex:automatic a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Automatic"@en;
+    schema:name "Automatic"@en;
+    rdfs:comment "Flag indicating if this entity operates automatically (e.g. in a lift)."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment.
+netex:boardingPosition a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Boarding position"@en;
+    schema:name "Boarding position"@en;
+    rdfs:comment "Boarding position of entity."@en;
+    rdfs:range netex:BoardingPosition;
+    schema:domainIncludes netex:Quay.
+netex:boardingUse a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Boarding use"@en;
+    schema:name "Boarding use"@en;
+    rdfs:comment "Boarding use of entity."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:Quay;
+    bahnhof:domainInDBStationsProfile netex:Quay.
+netex:borderCrossing a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Border crossing"@en;
+    schema:name "Border crossing"@en;
+    rdfs:comment "Flag indicating if the entity (usually a stop place) is a border crossing."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:StopPlace.
+netex:brailleButtons a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Braille buttons"@en;
+    schema:name "Braille buttons"@en;
+    rdfs:comment "Flag indicating if buttons in/on this entity are marked in Braille."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment.
+netex:branding a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Branding"@en;
+    schema:name "Branding"@en;
+    rdfs:comment "Branding of entity."@en;
+    rdfs:range netex:Branding;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace, netex:TopographicPlace;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:callButtonHeight a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Call button height"@en;
+    schema:name "Call button height"@en;
+    rdfs:comment "Height of this entities' call button from the floor, in meters."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:centroid a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Centroid"@en;
+    schema:name "Centroid"@en;
+    rdfs:comment "Centroid of entity."@en;
+    rdfs:range netex:Centroid;
+    schema:domainIncludes netex:Quay, netex:StopPlace, netex:TopographicPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+netex:checkConstraint a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Check constraint"@en;
+    schema:name "Check constraint"@en;
+    rdfs:comment "Check constraint of entity."@en;
+    rdfs:range netex:CheckConstraint;
+    schema:domainIncludes netex:Quay.
+netex:classOfUse a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Class of use"@en;
+    schema:name "Class of use"@en;
+    rdfs:comment "Class of use of entity."@en;
+    rdfs:range netex:ClassOfUse;
+    schema:domainIncludes netex:Quay.
+netex:compassBearing a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Compass bearing"@en;
+    schema:name "Compass bearing"@en;
+    rdfs:comment "Heading of entity, in degrees."@en;
+    rdfs:range xsd:float;
+    schema:domainIncludes netex:Quay.
+netex:compassOctant a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Compass octant"@en;
+    schema:name "Compass octant"@en;
+    rdfs:comment "Heading of entity, as a compass octant (e.g. north-east)."@en;
+    rdfs:range netex:CompassOctant;
+    schema:domainIncludes netex:Quay.
+netex:containedIn a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Contained in"@en;
+    schema:name "Contained in"@en;
+    rdfs:comment "Contained in of entity."@en;
+    rdfs:range netex:TopographicPlace;
+    schema:domainIncludes netex:TopographicPlace.
+netex:containedInPlace a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Contained in place"@en;
+    schema:name "Contained in place"@en;
+    rdfs:comment "Contained in place of entity."@en;
+    rdfs:range netex:TopographicPlace;
+    schema:domainIncludes netex:StopPlace.
+netex:continuousHandrail a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Continuous handrail"@en;
+    schema:name "Continuous handrail"@en;
+    rdfs:comment "Flag indicating if a handrail is continuous across the entire entity."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:StaircaseEquipment.
+netex:covered a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Covered"@en;
+    schema:name "Covered"@en;
+    rdfs:comment "Covered of entity."@en;
+    rdfs:range netex:Covered;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:Quay.
+netex:crossRoad a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Cross road"@en;
+    schema:name "Cross road"@en;
+    rdfs:comment "Name of a road that has a nearby intersection with the street the entity is on."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:Quay, netex:StopPlace.
+netex:defaultLanguage a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Default language"@en;
+    schema:name "Default language"@en;
+    rdfs:comment "Default language of entity."@en;
+    rdfs:range xsd:language;
+    schema:domainIncludes netex:Locale.
+netex:depth a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Depth"@en;
+    schema:name "Depth"@en;
+    rdfs:comment "Depth of entity, in meters."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:description a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Description"@en;
+    schema:name "Description"@en;
+    rdfs:comment "Description of entity."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace, netex:TopographicPlace.
+netex:directionButtonHeight a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Direction button height"@en;
+    schema:name "Direction button height"@en;
+    rdfs:comment "Height of this entities' direction call button(s) from the floor, in meters."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:directionOfUse a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Direction of use"@en;
+    schema:name "Direction of use"@en;
+    rdfs:comment "Direction in which entity can be used."@en;
+    rdfs:range netex:DirectionOfUse;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:LiftEquipment.
+netex:dogsMustBeCarried a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Dogs must be carried"@en;
+    schema:name "Dogs must be carried"@en;
+    rdfs:comment "Flag indicating if dogs must be carried while using this entity."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:EscalatorEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment.
+netex:edgeToTrackCenterDistance a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Edge to track center distance"@en;
+    schema:name "Edge to track center distance"@en;
+    rdfs:comment "Distance between the track center and the adjacent platform edge, in meters, as defined in chapter 13 of EN 15273-3:2013."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:Quay;
+    bahnhof:domainInDBStationsProfile netex:Quay.
+netex:energySaving a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Energy saving"@en;
+    schema:name "Energy saving"@en;
+    rdfs:comment "Flag indicating if the entity is operated in an energy-saving mode (e.g. an escalator that automatically turns off when not being used)."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:EscalatorEquipment.
+netex:entrance a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Entrance"@en;
+    schema:name "Entrance"@en;
+    rdfs:comment "Entrance of entity."@en;
+    rdfs:range netex:Entity;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:Quay, netex:StopPlace.
+netex:equipmentPlace a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Equipment place"@en;
+    schema:name "Equipment place"@en;
+    rdfs:comment "Equipment place of entity."@en;
+    rdfs:range netex:EquipmentPlace;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:Quay, netex:StopPlace.
+netex:escalatorWithLanding a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Escalator with landing"@en;
+    schema:name "Escalator with landing"@en;
+    rdfs:comment "Flag indicating if an escalator entity has landings."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:EscalatorEquipment.
+netex:externalFloorSelection a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "External floor selection"@en;
+    schema:name "External floor selection"@en;
+    rdfs:comment "Flag indicating if floor selection is made outside this entity (e.g. for a lift)."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment.
+netex:facility a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Facility"@en;
+    schema:name "Facility"@en;
+    rdfs:comment "Facility of entity."@en;
+    rdfs:range netex:SiteFacilitySet;
+    schema:domainIncludes netex:Quay, netex:StopPlace.
+netex:flight a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Flight"@en;
+    schema:name "Flight"@en;
+    rdfs:comment "Flight of entity."@en;
+    rdfs:range netex:StairFlight;
+    schema:domainIncludes netex:StaircaseEquipment.
+netex:gated a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Gated"@en;
+    schema:name "Gated"@en;
+    rdfs:comment "Gated of entity."@en;
+    rdfs:range netex:Gated;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:Quay, netex:StopPlace.
+netex:groundMarkAlignedWithButton a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Ground mark aligned with button"@en;
+    schema:name "Ground mark aligned with button"@en;
+    rdfs:comment "Flag indicating if there is a tactile marking on the ground, aligned or below to the ground floor button in/on this entity (e.g. in a lift)."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:handrailHeight a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Handrail height"@en;
+    schema:name "Handrail height"@en;
+    rdfs:comment "Height of this entities' primary (upper) handrail from the floor, in meters."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:StaircaseEquipment.
+netex:handrailType a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Handrail type"@en;
+    schema:name "Handrail type"@en;
+    rdfs:comment "Handrail type of entity."@en;
+    rdfs:range netex:Lighting;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:StaircaseEquipment.
+netex:height a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Height"@en;
+    schema:name "Height"@en;
+    rdfs:comment "Height of entity (or entrance to entity, for certain equipments), in meters."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:LiftEquipment.
+netex:id a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Id"@en;
+    schema:name "Id"@en;
+    rdfs:comment "Id of entity."@en;
+    rdfs:range xsd:string;
+    rdfs:subPropertyOf dct:identifier;
+    schema:domainIncludes netex:AccessSpace, netex:AccessVehicleEquipment, netex:AccessibilityAssessment, netex:AssistanceService, netex:Entrance, netex:EntranceEquipment, netex:EquipmentPlace, netex:EscalatorEquipment, netex:Level, netex:LiftEquipment, netex:Locale, netex:Organisation, netex:PassengerInformationEquipment, netex:PostalAddress, netex:Quay, netex:RampEquipment, netex:SanitaryEquipment, netex:StaircaseEquipment, netex:StopPlace, netex:TravelatorEquipment;
+    bahnhof:domainInDBStationsProfile netex:AccessSpace, netex:AccessVehicleEquipment, netex:AccessibilityAssessment, netex:AssistanceService, netex:Entrance, netex:EntranceEquipment, netex:EquipmentPlace, netex:EscalatorEquipment, netex:Level, netex:LiftEquipment, netex:Organisation, netex:PassengerInformationEquipment, netex:Quay, netex:RampEquipment, netex:SanitaryEquipment, netex:StaircaseEquipment, netex:StopPlace, netex:TravelatorEquipment.
+netex:image a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Image"@en;
+    schema:name "Image"@en;
+    rdfs:comment "Image of entity."@en;
+    rdfs:range xsd:anyURI;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+netex:internalHeight a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Internal height"@en;
+    schema:name "Internal height"@en;
+    rdfs:comment "Internal width of entity, in meters (used for entities where netex:width indicates the width of the entrance)."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:internalWidth a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Internal width"@en;
+    schema:name "Internal width"@en;
+    rdfs:comment "Internal height of entity, in meters (used for entities where netex:height indicates the height of the entrance)."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:label a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Label"@en;
+    schema:name "Label"@en;
+    rdfs:comment "Label of entity."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:Quay.
+netex:landmark a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Landmark"@en;
+    schema:name "Landmark"@en;
+    rdfs:comment "Name of a landmark  near the entity, which can be used to describe its relative location."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:Quay, netex:StopPlace.
+netex:length a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Length"@en;
+    schema:name "Length"@en;
+    rdfs:comment "Length of entity, in meters."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:Quay;
+    bahnhof:domainInDBStationsProfile netex:Quay.
+netex:level a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Level"@en;
+    schema:name "Level"@en;
+    rdfs:comment "Level of entity."@en;
+    rdfs:range netex:Level;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:Quay, netex:StopPlace.
+netex:lighting a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Lighting"@en;
+    schema:name "Lighting"@en;
+    rdfs:comment "Lighting of entity."@en;
+    rdfs:range netex:Lighting;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:Quay, netex:StopPlace.
+netex:limitedUse a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Limited use"@en;
+    schema:name "Limited use"@en;
+    rdfs:comment "Usage limitations of entity (usually a stop place)."@en;
+    rdfs:range netex:LimitedUse;
+    schema:domainIncludes netex:StopPlace.
+netex:localService a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Local service"@en;
+    schema:name "Local service"@en;
+    rdfs:comment "Local service of entity."@en;
+    rdfs:range netex:LocalService;
+    schema:domainIncludes netex:Quay, netex:StopPlace.
+netex:locale a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Locale"@en;
+    schema:name "Locale"@en;
+    rdfs:comment "Locale of entity."@en;
+    rdfs:range netex:Locale;
+    schema:domainIncludes netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+netex:lowerHandrailHeight a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Lower handrail height"@en;
+    schema:name "Lower handrail height"@en;
+    rdfs:comment "Height of this entities' secondary (lower) handrail from the floor, in meters."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:StaircaseEquipment.
+netex:magneticInductionLoop a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Magnetic induction loop"@en;
+    schema:name "Magnetic induction loop"@en;
+    rdfs:comment "Flag indicating the presence of a magnetic induction loop in/on/at this entity (e.g. in a lift)."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:mainTerminusForPlace a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Main terminus for place"@en;
+    schema:name "Main terminus for place"@en;
+    rdfs:comment "Main terminus for place of entity."@en;
+    rdfs:range netex:TopographicPlace;
+    schema:domainIncludes netex:StopPlace.
+netex:maximumLoad a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Maximum load"@en;
+    schema:name "Maximum load"@en;
+    rdfs:comment "Maximum load of entity, in kilograms."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:member a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Member"@en;
+    schema:name "Member"@en;
+    rdfs:comment "Member of entity."@en;
+    rdfs:range netex:Point;
+    schema:domainIncludes netex:Quay, netex:StopPlace, netex:TopographicPlace.
+netex:mirrorOnOppositeSide a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Mirror on opposite side"@en;
+    schema:name "Mirror on opposite side"@en;
+    rdfs:comment "Flag indicating if there is a mirror on the wall opposite the entrance/door (usually in a lift)."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment.
+netex:monitoringRemoteControl a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Monitoring remote control"@en;
+    schema:name "Monitoring remote control"@en;
+    rdfs:comment "Flag indicating if the entity is equipped with a remote operation control system."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:EscalatorEquipment.
+netex:name a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Name"@en;
+    schema:name "Name"@en;
+    rdfs:comment "Name of entity."@en;
+    rdfs:range xsd:string;
+    owl:sameAs tmfac:name, foaf:name, schema:name;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace, netex:TopographicPlace;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace.
+netex:nameSuffix a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Name suffix"@en;
+    schema:name "Name suffix"@en;
+    rdfs:comment "Further suffix to an entities' name that may be used in some contexts."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:Quay, netex:StopPlace.
+netex:navigationPath a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Navigation path"@en;
+    schema:name "Navigation path"@en;
+    rdfs:comment "Navigation path of entity."@en;
+    rdfs:range netex:NavigationPath;
+    schema:domainIncludes netex:StopPlace.
+netex:note a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Note"@en;
+    schema:name "Note"@en;
+    rdfs:comment "Further description or other comment for internal use by the operator."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment.
+netex:numberOfFlights a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Number of flights"@en;
+    schema:name "Number of flights"@en;
+    rdfs:comment "Number of stair flights on entity."@en;
+    rdfs:range xsd:integer;
+    schema:domainIncludes netex:StaircaseEquipment.
+netex:numberOfSteps a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Number of steps"@en;
+    schema:name "Number of steps"@en;
+    rdfs:comment "Number of steps on entity."@en;
+    rdfs:range xsd:positiveInteger;
+    schema:domainIncludes netex:EscalatorEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:StaircaseEquipment.
+netex:operator a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Operator"@en;
+    schema:name "Operator"@en;
+    rdfs:comment "Operator of entity."@en;
+    rdfs:range netex:Operator;
+    schema:domainIncludes netex:StopPlace.
+netex:organisation a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Organisation"@en;
+    schema:name "Organisation"@en;
+    rdfs:comment "Organisation of entity."@en;
+    rdfs:range netex:Organisation;
+    schema:domainIncludes netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+netex:outOfService a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Out of service"@en;
+    schema:name "Out of service"@en;
+    rdfs:comment "Flag indicating if an entity if out of service for protracted time."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:LiftEquipment.
+netex:parentQuay a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Parent quay"@en;
+    schema:name "Parent quay"@en;
+    rdfs:comment "Parent quay of entity."@en;
+    rdfs:range netex:Quay;
+    schema:domainIncludes netex:Quay;
+    bahnhof:domainInDBStationsProfile netex:Quay.
+netex:parentSite a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Parent site"@en;
+    schema:name "Parent site"@en;
+    rdfs:comment "Parent site of entity."@en;
+    rdfs:range netex:Site;
+    schema:domainIncludes netex:StopPlace.
+netex:parentZone a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Parent zone"@en;
+    schema:name "Parent zone"@en;
+    rdfs:comment "Parent zone of entity."@en;
+    rdfs:range netex:Zone;
+    schema:domainIncludes netex:Quay, netex:StopPlace, netex:TopographicPlace.
+netex:passengersPerMinute a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Passengers per minute"@en;
+    schema:name "Passengers per minute"@en;
+    rdfs:comment "Number of passengers per minute which can use this entity."@en;
+    rdfs:range xsd:integer;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment.
+netex:pathJunction a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Path junction"@en;
+    schema:name "Path junction"@en;
+    rdfs:comment "Path junction of entity."@en;
+    rdfs:range netex:PathJunction;
+    schema:domainIncludes netex:StopPlace.
+netex:pathLink a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Path link"@en;
+    schema:name "Path link"@en;
+    rdfs:comment "Path link of entity."@en;
+    rdfs:range netex:PathLink;
+    schema:domainIncludes netex:StopPlace.
+netex:personCapacity a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Person capacity"@en;
+    schema:name "Person capacity"@en;
+    rdfs:comment "Total number of people this entity can contain."@en;
+    rdfs:range xsd:integer;
+    schema:domainIncludes netex:Quay, netex:StopPlace.
+netex:placeEquipment a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Place equipment"@en;
+    schema:name "Place equipment"@en;
+    rdfs:comment "Place equipment of entity."@en;
+    rdfs:range netex:Entity;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:Quay, netex:StopPlace.
+netex:placeType a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Place type"@en;
+    schema:name "Place type"@en;
+    rdfs:comment "Place type of entity."@en;
+    rdfs:range netex:TypeOfPlace;
+    schema:domainIncludes netex:Quay, netex:StopPlace, netex:TopographicPlace.
+netex:plateCode a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Plate code"@en;
+    schema:name "Plate code"@en;
+    rdfs:comment "A number/code for the entity which is used on signage."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:Quay;
+    bahnhof:domainInDBStationsProfile netex:Quay.
+netex:platformHeight a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Platform height"@en;
+    schema:name "Platform height"@en;
+    rdfs:comment "Height of platform, in meters."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:Quay;
+    bahnhof:domainInDBStationsProfile netex:Quay.
+netex:postCode a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Post code"@en;
+    schema:name "Post code"@en;
+    rdfs:comment "Post code of entity."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:PostalAddress.
+netex:postalAddress a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Postal address"@en;
+    schema:name "Postal address"@en;
+    rdfs:comment "Postal address of entity."@en;
+    rdfs:range netex:PostalAddress;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+netex:privateCode a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Private code"@en;
+    schema:name "Private code"@en;
+    rdfs:comment "A private code that uniquely identifies the entity. May be used for inter-operating with other (legacy) systems."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace, netex:TopographicPlace;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace.
+netex:projection a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Projection"@en;
+    schema:name "Projection"@en;
+    rdfs:comment "Projection of entity."@en;
+    rdfs:range netex:Entity;
+    schema:domainIncludes netex:Quay, netex:StopPlace, netex:TopographicPlace.
+netex:province a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Province"@en;
+    schema:name "Province"@en;
+    rdfs:comment "Province of entity."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:PostalAddress.
+netex:publicCode a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Public code"@en;
+    schema:name "Public code"@en;
+    rdfs:comment "A code which may be publicly displayed on/in/around the entity to identify it."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace.
+netex:publicUse a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Public use"@en;
+    schema:name "Public use"@en;
+    rdfs:comment "Public use of entity."@en;
+    rdfs:range netex:PublicUse;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:Quay, netex:StopPlace.
+netex:purposeOfGrouping a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Purpose of grouping"@en;
+    schema:name "Purpose of grouping"@en;
+    rdfs:comment "Purpose of grouping of entity."@en;
+    rdfs:range netex:PurposeOfGrouping;
+    schema:domainIncludes netex:Quay, netex:StopPlace, netex:TopographicPlace.
+netex:quay a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Quay"@en;
+    schema:name "Quay"@en;
+    rdfs:comment "Quay of entity."@en;
+    rdfs:range netex:Quay;
+    schema:domainIncludes netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+netex:quayType a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Quay type"@en;
+    schema:name "Quay type"@en;
+    rdfs:comment "Quay type of entity."@en;
+    rdfs:range netex:QuayType;
+    schema:domainIncludes netex:Quay;
+    bahnhof:domainInDBStationsProfile netex:Quay.
+netex:raisedButtons a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Raised buttons"@en;
+    schema:name "Raised buttons"@en;
+    rdfs:comment "Flag indicating if buttons in/on this entity are raised."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:reachedFloorAnnouncement a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Reached floor announcement"@en;
+    schema:name "Reached floor announcement"@en;
+    rdfs:comment "Flag indicating this entity has a visual, tactile or audible display to announce the floor it has reached (e.g. in a lift)."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment.
+netex:relativeWeighting a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Relative weighting"@en;
+    schema:name "Relative weighting"@en;
+    rdfs:comment "Relative weighting of entity."@en;
+    rdfs:range xsd:integer;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment.
+netex:roadAddress a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Road address"@en;
+    schema:name "Road address"@en;
+    rdfs:comment "Road address of entity."@en;
+    rdfs:range netex:RoadAddress;
+    schema:domainIncludes netex:Quay, netex:StopPlace.
+netex:safeForGuideDog a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Safe for guide dog"@en;
+    schema:name "Safe for guide dog"@en;
+    rdfs:comment "Flag indicating if an entity is safe for a guide dog."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment.
+netex:servedPlace a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Served place"@en;
+    schema:name "Served place"@en;
+    rdfs:comment "Served place of entity."@en;
+    rdfs:range netex:TopographicPlace;
+    schema:domainIncludes netex:StopPlace.
+netex:shortCode a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Short code"@en;
+    schema:name "Short code"@en;
+    rdfs:comment "A 20 bit number used for wireless cleardown of stop displays by some AVL systems."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:Quay.
+netex:shortName a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Short name"@en;
+    schema:name "Short name"@en;
+    rdfs:comment "Short name of entity."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:Quay, netex:StopPlace, netex:TopographicPlace.
+netex:signageToLift a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Signage to lift"@en;
+    schema:name "Signage to lift"@en;
+    rdfs:comment "Flag indicating if this lift has \"good\" signage to find it."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment.
+netex:site a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Site"@en;
+    schema:name "Site"@en;
+    rdfs:comment "Site of entity."@en;
+    rdfs:range netex:Site;
+    schema:domainIncludes netex:Quay;
+    bahnhof:domainInDBStationsProfile netex:Quay.
+netex:siteType a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Site type"@en;
+    schema:name "Site type"@en;
+    rdfs:comment "Site type of entity."@en;
+    rdfs:range netex:SiteType;
+    schema:domainIncludes netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+netex:spiralStair a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Spiral stair"@en;
+    schema:name "Spiral stair"@en;
+    rdfs:comment "Flag indicating if stairs on entity are spiral."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:StaircaseEquipment.
+netex:stairRamp a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Stair ramp"@en;
+    schema:name "Stair ramp"@en;
+    rdfs:comment "Property indicating the presence and classification of a stair ramp on this entity."@en;
+    rdfs:range netex:StairRamp;
+    schema:domainIncludes netex:EscalatorEquipment, netex:StaircaseEquipment.
+netex:stepColourContrast a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Step colour contrast"@en;
+    schema:name "Step colour contrast"@en;
+    rdfs:comment "Flag indicating if steps on this entity have a colour contrasted nosing."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:EscalatorEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:StaircaseEquipment.
+netex:stepCondition a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Step condition"@en;
+    schema:name "Step condition"@en;
+    rdfs:comment "Step condition of entity."@en;
+    rdfs:range netex:StepCondition;
+    schema:domainIncludes netex:EscalatorEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:StaircaseEquipment.
+netex:stepHeight a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Step height"@en;
+    schema:name "Step height"@en;
+    rdfs:comment "Height of an individual step on this entity, in meters, usually rounded to the next centimeter."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:EscalatorEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:StaircaseEquipment.
+netex:stepLength a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Step length"@en;
+    schema:name "Step length"@en;
+    rdfs:comment "Length (depth) of an individual step on this entity, in meters, usually rounded to the next centimeter."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:EscalatorEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:StaircaseEquipment.
+netex:stopPlaceType a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Stop place type"@en;
+    schema:name "Stop place type"@en;
+    rdfs:comment "Stop place type of entity."@en;
+    rdfs:range netex:StopPlaceType;
+    schema:domainIncludes netex:StopPlace.
+netex:stopPlaceWeight a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Stop place weight"@en;
+    schema:name "Stop place weight"@en;
+    rdfs:comment "Type of expected interchange level at stop place (e.g. for use in journey planning or for classification)."@en;
+    rdfs:range netex:StopPlaceWeight;
+    schema:domainIncludes netex:StopPlace.
+netex:street a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Street"@en;
+    schema:name "Street"@en;
+    rdfs:comment "Street of entity."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:PostalAddress.
+netex:suitableForCycles a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Suitable for cycles"@en;
+    schema:name "Suitable for cycles"@en;
+    rdfs:comment "Flag indicating if an entity is usable/passable for bicycles."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:tactileActuators a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Tactile actuators"@en;
+    schema:name "Tactile actuators"@en;
+    rdfs:comment "Flag indicating if all buttons in/on this entity have tactile markings."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:tactileGroundFloorButton a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Tactile ground floor button"@en;
+    schema:name "Tactile ground floor button"@en;
+    rdfs:comment "Flag indicating if the ground floor button in/on this entity (e.g. in a lift) has tactile marking."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:tactileWriting a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Tactile writing"@en;
+    schema:name "Tactile writing"@en;
+    rdfs:comment "Flag indicating the presence of signage that can be read tactilely (e.g. in Braille) on this entities' handrails."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:StaircaseEquipment.
+netex:tariffZone a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Tariff zone"@en;
+    schema:name "Tariff zone"@en;
+    rdfs:comment "Tariff zone of entity."@en;
+    rdfs:range netex:TariffZone;
+    schema:domainIncludes netex:Quay, netex:StopPlace.
+netex:throughLoader a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Through loader"@en;
+    schema:name "Through loader"@en;
+    rdfs:comment "Flag indicating if this entity is a so-called \"through-loader\" (usually used to describe lifts with more than one cabin door)."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:timeZone a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Time zone"@en;
+    schema:name "Time zone"@en;
+    rdfs:comment "Time zone of entity."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:Locale.
+netex:topographicPlace a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Topographic place"@en;
+    schema:name "Topographic place"@en;
+    rdfs:comment "Topographic place of entity."@en;
+    rdfs:range netex:TopographicPlace;
+    schema:domainIncludes netex:StopPlace.
+netex:town a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Town"@en;
+    schema:name "Town"@en;
+    rdfs:comment "Town of entity."@en;
+    rdfs:range xsd:string;
+    schema:domainIncludes netex:PostalAddress.
+netex:transportMode a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Transport mode"@en;
+    schema:name "Transport mode"@en;
+    rdfs:comment "Transport mode of entity."@en;
+    rdfs:range netex:TransportMode;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:Quay, netex:StopPlace.
+netex:transportOrganisation a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Transport organisation"@en;
+    schema:name "Transport organisation"@en;
+    rdfs:comment "Transport organisation of entity."@en;
+    rdfs:range netex:TransportOrganisation;
+    schema:domainIncludes netex:StopPlace.
+netex:type a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Type"@en;
+    schema:name "Type"@en;
+    rdfs:comment "Type of zone for this entity."@en;
+    rdfs:range netex:TypeOfZone;
+    schema:domainIncludes netex:Quay, netex:StopPlace, netex:TopographicPlace.
+netex:unlocalisedEquipment a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Unlocalised equipment"@en;
+    schema:name "Unlocalised equipment"@en;
+    rdfs:comment "Unlocalised equipment of entity."@en;
+    rdfs:range netex:Entity;
+    schema:domainIncludes netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+netex:url a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Url"@en;
+    schema:name "Url"@en;
+    rdfs:comment "Url of entity."@en;
+    rdfs:range xsd:anyURI;
+    owl:sameAs foaf:page;
+    schema:domainIncludes netex:Quay, netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+netex:vehicleStoppingPlace a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Vehicle stopping place"@en;
+    schema:name "Vehicle stopping place"@en;
+    rdfs:comment "Vehicle stopping place of entity."@en;
+    rdfs:range netex:VehicleStoppingPlace;
+    schema:domainIncludes netex:StopPlace.
+netex:weighting a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Weighting"@en;
+    schema:name "Weighting"@en;
+    rdfs:comment "Default rating of entity (usually a stop place) for making interchanges."@en;
+    rdfs:range netex:Weighting;
+    schema:domainIncludes netex:StopPlace.
+netex:wheelchairPassable a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Wheelchair passable"@en;
+    schema:name "Wheelchair passable"@en;
+    rdfs:comment "Flag indicating if an entity is usable/passable by wheelchair."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:wheelchairTurningCircle a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Wheelchair turning circle"@en;
+    schema:name "Wheelchair turning circle"@en;
+    rdfs:comment "Maximim turning circle for a wheelchair within this entity, in meters."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:LiftEquipment;
+    bahnhof:domainInDBStationsProfile netex:LiftEquipment.
+netex:width a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Width"@en;
+    schema:name "Width"@en;
+    rdfs:comment "Width of entity (or entrance to entity, for certain equipments), in meters."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment.
+netex:withoutRiser a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Without riser"@en;
+    schema:name "Without riser"@en;
+    rdfs:comment "Flag indicating if steps on this equipment do not have a riser (e.g. for openworks staircases)."@en;
+    rdfs:range xsd:boolean;
+    schema:domainIncludes netex:StaircaseEquipment;
+    bahnhof:domainInDBStationsProfile netex:StaircaseEquipment.
+netex:AccessMode a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Access mode"@en;
+    schema:name "Access mode"@en.
+netex:AccessMode-bicycle a netex:AccessMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Bicycle"@en;
+    schema:name "Bicycle"@en;
+    rdfs:comment "Access mode 'Bicycle'"@en.
+netex:AccessMode-boat a netex:AccessMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Boat"@en;
+    schema:name "Boat"@en;
+    rdfs:comment "Access mode 'Boat'"@en.
+netex:AccessMode-car a netex:AccessMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Car"@en;
+    schema:name "Car"@en;
+    rdfs:comment "Access mode 'Car'"@en.
+netex:AccessMode-foot a netex:AccessMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Foot"@en;
+    schema:name "Foot"@en;
+    rdfs:comment "Access mode 'Foot'"@en.
+netex:AccessMode-motorcycle a netex:AccessMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Motorcycle"@en;
+    schema:name "Motorcycle"@en;
+    rdfs:comment "Access mode 'Motorcycle'"@en.
+netex:AccessMode-scooter a netex:AccessMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Scooter"@en;
+    schema:name "Scooter"@en;
+    rdfs:comment "Access mode 'Scooter'"@en.
+netex:AccessMode-shuttle a netex:AccessMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Shuttle"@en;
+    schema:name "Shuttle"@en;
+    rdfs:comment "Access mode 'Shuttle'"@en.
+netex:AccessMode-skate a netex:AccessMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Skate"@en;
+    schema:name "Skate"@en;
+    rdfs:comment "Access mode 'Skate'"@en.
+netex:AccessMode-ski a netex:AccessMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Ski"@en;
+    schema:name "Ski"@en;
+    rdfs:comment "Access mode 'Ski'"@en.
+netex:AccessMode-taxi a netex:AccessMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Taxi"@en;
+    schema:name "Taxi"@en;
+    rdfs:comment "Access mode 'Taxi'"@en.
+netex:CompassOctant a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Compass octant"@en;
+    schema:name "Compass octant"@en.
+netex:CompassOctant-E a netex:CompassOctant;
+    status:term_status "unstable"@en;
+    rdfs:label "E"@en;
+    schema:name "E"@en;
+    rdfs:comment "Compass octant 'E'"@en.
+netex:CompassOctant-N a netex:CompassOctant;
+    status:term_status "unstable"@en;
+    rdfs:label "N"@en;
+    schema:name "N"@en;
+    rdfs:comment "Compass octant 'N'"@en.
+netex:CompassOctant-NE a netex:CompassOctant;
+    status:term_status "unstable"@en;
+    rdfs:label "Ne"@en;
+    schema:name "Ne"@en;
+    rdfs:comment "Compass octant 'Ne'"@en.
+netex:CompassOctant-NW a netex:CompassOctant;
+    status:term_status "unstable"@en;
+    rdfs:label "Nw"@en;
+    schema:name "Nw"@en;
+    rdfs:comment "Compass octant 'Nw'"@en.
+netex:CompassOctant-S a netex:CompassOctant;
+    status:term_status "unstable"@en;
+    rdfs:label "S"@en;
+    schema:name "S"@en;
+    rdfs:comment "Compass octant 'S'"@en.
+netex:CompassOctant-SE a netex:CompassOctant;
+    status:term_status "unstable"@en;
+    rdfs:label "Se"@en;
+    schema:name "Se"@en;
+    rdfs:comment "Compass octant 'Se'"@en.
+netex:CompassOctant-SW a netex:CompassOctant;
+    status:term_status "unstable"@en;
+    rdfs:label "Sw"@en;
+    schema:name "Sw"@en;
+    rdfs:comment "Compass octant 'Sw'"@en.
+netex:CompassOctant-W a netex:CompassOctant;
+    status:term_status "unstable"@en;
+    rdfs:label "W"@en;
+    schema:name "W"@en;
+    rdfs:comment "Compass octant 'W'"@en.
+netex:Covered a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Covered"@en;
+    schema:name "Covered"@en.
+netex:Covered-covered a netex:Covered;
+    status:term_status "unstable"@en;
+    rdfs:label "Covered"@en;
+    schema:name "Covered"@en;
+    rdfs:comment "Covered 'Covered'"@en.
+netex:Covered-indoors a netex:Covered;
+    status:term_status "unstable"@en;
+    rdfs:label "Indoors"@en;
+    schema:name "Indoors"@en;
+    rdfs:comment "Covered 'Indoors'"@en.
+netex:Covered-mixed a netex:Covered;
+    status:term_status "unstable"@en;
+    rdfs:label "Mixed"@en;
+    schema:name "Mixed"@en;
+    rdfs:comment "Covered 'Mixed'"@en.
+netex:Covered-outdoors a netex:Covered;
+    status:term_status "unstable"@en;
+    rdfs:label "Outdoors"@en;
+    schema:name "Outdoors"@en;
+    rdfs:comment "Covered 'Outdoors'"@en.
+netex:Covered-unknown a netex:Covered;
+    status:term_status "unstable"@en;
+    rdfs:label "Unknown"@en;
+    schema:name "Unknown"@en;
+    rdfs:comment "Covered 'Unknown'"@en.
+netex:DirectionOfUse a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Direction of use"@en;
+    schema:name "Direction of use"@en.
+netex:DirectionOfUse-both a netex:DirectionOfUse;
+    status:term_status "unstable"@en;
+    rdfs:label "Both"@en;
+    schema:name "Both"@en;
+    rdfs:comment "Direction of use 'Both'"@en.
+netex:DirectionOfUse-down a netex:DirectionOfUse;
+    status:term_status "unstable"@en;
+    rdfs:label "Down"@en;
+    schema:name "Down"@en;
+    rdfs:comment "Direction of use 'Down'"@en.
+netex:DirectionOfUse-up a netex:DirectionOfUse;
+    status:term_status "unstable"@en;
+    rdfs:label "Up"@en;
+    schema:name "Up"@en;
+    rdfs:comment "Direction of use 'Up'"@en.
+netex:Gated a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Gated"@en;
+    schema:name "Gated"@en.
+netex:Gated-gatedArea a netex:Gated;
+    status:term_status "unstable"@en;
+    rdfs:label "Gated area"@en;
+    schema:name "Gated area"@en;
+    rdfs:comment "Gated 'Gated area'"@en.
+netex:Gated-openArea a netex:Gated;
+    status:term_status "unstable"@en;
+    rdfs:label "Open area"@en;
+    schema:name "Open area"@en;
+    rdfs:comment "Gated 'Open area'"@en.
+netex:Gated-unknown a netex:Gated;
+    status:term_status "unstable"@en;
+    rdfs:label "Unknown"@en;
+    schema:name "Unknown"@en;
+    rdfs:comment "Gated 'Unknown'"@en.
+netex:HandrailType a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Handrail type"@en;
+    schema:name "Handrail type"@en.
+netex:HandrailType-bothSides a netex:HandrailType;
+    status:term_status "unstable"@en;
+    rdfs:label "Both sides"@en;
+    schema:name "Both sides"@en;
+    rdfs:comment "Handrail type 'Both sides'"@en.
+netex:HandrailType-none a netex:HandrailType;
+    status:term_status "unstable"@en;
+    rdfs:label "None"@en;
+    schema:name "None"@en;
+    rdfs:comment "Handrail type 'None'"@en.
+netex:HandrailType-oneSide a netex:HandrailType;
+    status:term_status "unstable"@en;
+    rdfs:label "One side"@en;
+    schema:name "One side"@en;
+    rdfs:comment "Handrail type 'One side'"@en.
+netex:Lighting a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Lighting"@en;
+    schema:name "Lighting"@en.
+netex:Lighting-other a netex:Lighting;
+    status:term_status "unstable"@en;
+    rdfs:label "Other"@en;
+    schema:name "Other"@en;
+    rdfs:comment "Lighting 'Other'"@en.
+netex:Lighting-poorlyLit a netex:Lighting;
+    status:term_status "unstable"@en;
+    rdfs:label "Poorly lit"@en;
+    schema:name "Poorly lit"@en;
+    rdfs:comment "Lighting 'Poorly lit'"@en.
+netex:Lighting-unknown a netex:Lighting;
+    status:term_status "unstable"@en;
+    rdfs:label "Unknown"@en;
+    schema:name "Unknown"@en;
+    rdfs:comment "Lighting 'Unknown'"@en.
+netex:Lighting-unlit a netex:Lighting;
+    status:term_status "unstable"@en;
+    rdfs:label "Unlit"@en;
+    schema:name "Unlit"@en;
+    rdfs:comment "Lighting 'Unlit'"@en.
+netex:Lighting-wellLit a netex:Lighting;
+    status:term_status "unstable"@en;
+    rdfs:label "Well lit"@en;
+    schema:name "Well lit"@en;
+    rdfs:comment "Lighting 'Well lit'"@en.
+netex:LimitedUse a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Limited use"@en;
+    schema:name "Limited use"@en.
+netex:LimitedUse-interchangeOnly a netex:LimitedUse;
+    status:term_status "unstable"@en;
+    rdfs:label "Interchange only"@en;
+    schema:name "Interchange only"@en;
+    rdfs:comment "Limited use 'Interchange only'"@en.
+netex:LimitedUse-isolated a netex:LimitedUse;
+    status:term_status "unstable"@en;
+    rdfs:label "Isolated"@en;
+    schema:name "Isolated"@en;
+    rdfs:comment "Limited use 'Isolated'"@en.
+netex:LimitedUse-limitedService a netex:LimitedUse;
+    status:term_status "unstable"@en;
+    rdfs:label "Limited service"@en;
+    schema:name "Limited service"@en;
+    rdfs:comment "Limited use 'Limited service'"@en.
+netex:LimitedUse-longWalkToAccess a netex:LimitedUse;
+    status:term_status "unstable"@en;
+    rdfs:label "Long walk to access"@en;
+    schema:name "Long walk to access"@en;
+    rdfs:comment "Limited use 'Long walk to access'"@en.
+netex:LimitedUse-noDirectRoadAccess a netex:LimitedUse;
+    status:term_status "unstable"@en;
+    rdfs:label "No direct road access"@en;
+    schema:name "No direct road access"@en;
+    rdfs:comment "Limited use 'No direct road access'"@en.
+netex:LimitedUse-other a netex:LimitedUse;
+    status:term_status "unstable"@en;
+    rdfs:label "Other"@en;
+    schema:name "Other"@en;
+    rdfs:comment "Limited use 'Other'"@en.
+netex:PublicUse a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Public use"@en;
+    schema:name "Public use"@en.
+netex:PublicUse-all a netex:PublicUse;
+    status:term_status "unstable"@en;
+    rdfs:label "All"@en;
+    schema:name "All"@en;
+    rdfs:comment "Public use 'All'"@en.
+netex:PublicUse-authorisedPublicOnly a netex:PublicUse;
+    status:term_status "unstable"@en;
+    rdfs:label "Authorised public only"@en;
+    schema:name "Authorised public only"@en;
+    rdfs:comment "Public use 'Authorised public only'"@en.
+netex:PublicUse-disabledPublicOnly a netex:PublicUse;
+    status:term_status "unstable"@en;
+    rdfs:label "Disabled public only"@en;
+    schema:name "Disabled public only"@en;
+    rdfs:comment "Public use 'Disabled public only'"@en.
+netex:PublicUse-publicOnly a netex:PublicUse;
+    status:term_status "unstable"@en;
+    rdfs:label "Public only"@en;
+    schema:name "Public only"@en;
+    rdfs:comment "Public use 'Public only'"@en.
+netex:PublicUse-staffOnly a netex:PublicUse;
+    status:term_status "unstable"@en;
+    rdfs:label "Staff only"@en;
+    schema:name "Staff only"@en;
+    rdfs:comment "Public use 'Staff only'"@en.
+netex:QuayType a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Quay type"@en;
+    schema:name "Quay type"@en.
+netex:QuayType-airlineGate a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Airline gate"@en;
+    schema:name "Airline gate"@en;
+    rdfs:comment "Quay type 'Airline gate'"@en.
+netex:QuayType-boatQuay a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Boat quay"@en;
+    schema:name "Boat quay"@en;
+    rdfs:comment "Quay type 'Boat quay'"@en.
+netex:QuayType-busBay a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Bus bay"@en;
+    schema:name "Bus bay"@en;
+    rdfs:comment "Quay type 'Bus bay'"@en.
+netex:QuayType-busPlatform a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Bus platform"@en;
+    schema:name "Bus platform"@en;
+    rdfs:comment "Quay type 'Bus platform'"@en.
+netex:QuayType-busStop a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Bus stop"@en;
+    schema:name "Bus stop"@en;
+    rdfs:comment "Quay type 'Bus stop'"@en.
+netex:QuayType-busStopWithinRoadwayBoarding a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Bus stop within roadway boarding"@en;
+    schema:name "Bus stop within roadway boarding"@en;
+    rdfs:comment "Quay type 'Bus stop within roadway boarding'"@en.
+netex:QuayType-coachStop a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Coach stop"@en;
+    schema:name "Coach stop"@en;
+    rdfs:comment "Quay type 'Coach stop'"@en.
+netex:QuayType-ferryLanding a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Ferry landing"@en;
+    schema:name "Ferry landing"@en;
+    rdfs:comment "Quay type 'Ferry landing'"@en.
+netex:QuayType-handicappedLevelBoardingSector a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Handicapped level boarding sector"@en;
+    schema:name "Handicapped level boarding sector"@en;
+    rdfs:comment "Quay type 'Handicapped level boarding sector'"@en.
+netex:QuayType-metroIslandPlatform a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Metro island platform"@en;
+    schema:name "Metro island platform"@en;
+    rdfs:comment "Quay type 'Metro island platform'"@en.
+netex:QuayType-metroIslandPlatformSector a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Metro island platform sector"@en;
+    schema:name "Metro island platform sector"@en;
+    rdfs:comment "Quay type 'Metro island platform sector'"@en.
+netex:QuayType-metroPlatform a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Metro platform"@en;
+    schema:name "Metro platform"@en;
+    rdfs:comment "Quay type 'Metro platform'"@en.
+netex:QuayType-multimodal a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Multimodal"@en;
+    schema:name "Multimodal"@en;
+    rdfs:comment "Quay type 'Multimodal'"@en.
+netex:QuayType-other a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Other"@en;
+    schema:name "Other"@en;
+    rdfs:comment "Quay type 'Other'"@en.
+netex:QuayType-railIslandPlatform a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Rail island platform"@en;
+    schema:name "Rail island platform"@en;
+    rdfs:comment "Quay type 'Rail island platform'"@en.
+netex:QuayType-railPlatform a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Rail platform"@en;
+    schema:name "Rail platform"@en;
+    rdfs:comment "Quay type 'Rail platform'"@en.
+netex:QuayType-railPlatformSector a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Rail platform sector"@en;
+    schema:name "Rail platform sector"@en;
+    rdfs:comment "Quay type 'Rail platform sector'"@en.
+netex:QuayType-setDownPlace a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Set down place"@en;
+    schema:name "Set down place"@en;
+    rdfs:comment "Quay type 'Set down place'"@en.
+netex:QuayType-taxiStand a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Taxi stand"@en;
+    schema:name "Taxi stand"@en;
+    rdfs:comment "Quay type 'Taxi stand'"@en.
+netex:QuayType-telecabinPlatform a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Telecabin platform"@en;
+    schema:name "Telecabin platform"@en;
+    rdfs:comment "Quay type 'Telecabin platform'"@en.
+netex:QuayType-tramPlatform a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Tram platform"@en;
+    schema:name "Tram platform"@en;
+    rdfs:comment "Quay type 'Tram platform'"@en.
+netex:QuayType-tramStop a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Tram stop"@en;
+    schema:name "Tram stop"@en;
+    rdfs:comment "Quay type 'Tram stop'"@en.
+netex:QuayType-tramStopWithinRoadwayBoarding a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Tram stop within roadway boarding"@en;
+    schema:name "Tram stop within roadway boarding"@en;
+    rdfs:comment "Quay type 'Tram stop within roadway boarding'"@en.
+netex:QuayType-vehicleLoadingPlace a netex:QuayType;
+    status:term_status "unstable"@en;
+    rdfs:label "Vehicle loading place"@en;
+    schema:name "Vehicle loading place"@en;
+    rdfs:comment "Quay type 'Vehicle loading place'"@en.
+netex:SiteType a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Site type"@en;
+    schema:name "Site type"@en.
+netex:SiteType-culturalAttraction a netex:SiteType;
+    status:term_status "unstable"@en;
+    rdfs:label "Cultural attraction"@en;
+    schema:name "Cultural attraction"@en;
+    rdfs:comment "Site type 'Cultural attraction'"@en.
+netex:SiteType-government a netex:SiteType;
+    status:term_status "unstable"@en;
+    rdfs:label "Government"@en;
+    schema:name "Government"@en;
+    rdfs:comment "Site type 'Government'"@en.
+netex:SiteType-militaryBase a netex:SiteType;
+    status:term_status "unstable"@en;
+    rdfs:label "Military base"@en;
+    schema:name "Military base"@en;
+    rdfs:comment "Site type 'Military base'"@en.
+netex:SiteType-office a netex:SiteType;
+    status:term_status "unstable"@en;
+    rdfs:label "Office"@en;
+    schema:name "Office"@en;
+    rdfs:comment "Site type 'Office'"@en.
+netex:SiteType-other a netex:SiteType;
+    status:term_status "unstable"@en;
+    rdfs:label "Other"@en;
+    schema:name "Other"@en;
+    rdfs:comment "Site type 'Other'"@en.
+netex:SiteType-retail a netex:SiteType;
+    status:term_status "unstable"@en;
+    rdfs:label "Retail"@en;
+    schema:name "Retail"@en;
+    rdfs:comment "Site type 'Retail'"@en.
+netex:SiteType-school a netex:SiteType;
+    status:term_status "unstable"@en;
+    rdfs:label "School"@en;
+    schema:name "School"@en;
+    rdfs:comment "Site type 'School'"@en.
+netex:SiteType-sports a netex:SiteType;
+    status:term_status "unstable"@en;
+    rdfs:label "Sports"@en;
+    schema:name "Sports"@en;
+    rdfs:comment "Site type 'Sports'"@en.
+netex:SiteType-transport a netex:SiteType;
+    status:term_status "unstable"@en;
+    rdfs:label "Transport"@en;
+    schema:name "Transport"@en;
+    rdfs:comment "Site type 'Transport'"@en.
+netex:SiteType-university a netex:SiteType;
+    status:term_status "unstable"@en;
+    rdfs:label "University"@en;
+    schema:name "University"@en;
+    rdfs:comment "Site type 'University'"@en.
+netex:SiteType-works a netex:SiteType;
+    status:term_status "unstable"@en;
+    rdfs:label "Works"@en;
+    schema:name "Works"@en;
+    rdfs:comment "Site type 'Works'"@en.
+netex:StairRamp a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Stair ramp"@en;
+    schema:name "Stair ramp"@en.
+netex:StairRamp-bicycle a netex:StairRamp;
+    status:term_status "unstable"@en;
+    rdfs:label "Bicycle"@en;
+    schema:name "Bicycle"@en;
+    rdfs:comment "Stair ramp 'Bicycle'"@en.
+netex:StairRamp-luggage a netex:StairRamp;
+    status:term_status "unstable"@en;
+    rdfs:label "Luggage"@en;
+    schema:name "Luggage"@en;
+    rdfs:comment "Stair ramp 'Luggage'"@en.
+netex:StairRamp-none a netex:StairRamp;
+    status:term_status "unstable"@en;
+    rdfs:label "None"@en;
+    schema:name "None"@en;
+    rdfs:comment "Stair ramp 'None'"@en.
+netex:StairRamp-other a netex:StairRamp;
+    status:term_status "unstable"@en;
+    rdfs:label "Other"@en;
+    schema:name "Other"@en;
+    rdfs:comment "Stair ramp 'Other'"@en.
+netex:StairRamp-stroller a netex:StairRamp;
+    status:term_status "unstable"@en;
+    rdfs:label "Stroller"@en;
+    schema:name "Stroller"@en;
+    rdfs:comment "Stair ramp 'Stroller'"@en.
+netex:StairRamp-unknown a netex:StairRamp;
+    status:term_status "unstable"@en;
+    rdfs:label "Unknown"@en;
+    schema:name "Unknown"@en;
+    rdfs:comment "Stair ramp 'Unknown'"@en.
+netex:StepCondition a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Step condition"@en;
+    schema:name "Step condition"@en.
+netex:StepCondition-even a netex:StepCondition;
+    status:term_status "unstable"@en;
+    rdfs:label "Even"@en;
+    schema:name "Even"@en;
+    rdfs:comment "Step condition 'Even'"@en.
+netex:StepCondition-rough a netex:StepCondition;
+    status:term_status "unstable"@en;
+    rdfs:label "Rough"@en;
+    schema:name "Rough"@en;
+    rdfs:comment "Step condition 'Rough'"@en.
+netex:StepCondition-uneven a netex:StepCondition;
+    status:term_status "unstable"@en;
+    rdfs:label "Uneven"@en;
+    schema:name "Uneven"@en;
+    rdfs:comment "Step condition 'Uneven'"@en.
+netex:StopPlaceType a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Stop place type"@en;
+    schema:name "Stop place type"@en.
+netex:StopPlaceType-airport a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Airport"@en;
+    schema:name "Airport"@en;
+    rdfs:comment "Stop place type 'Airport'"@en.
+netex:StopPlaceType-busStation a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Bus station"@en;
+    schema:name "Bus station"@en;
+    rdfs:comment "Stop place type 'Bus station'"@en.
+netex:StopPlaceType-coachStation a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Coach station"@en;
+    schema:name "Coach station"@en;
+    rdfs:comment "Stop place type 'Coach station'"@en.
+netex:StopPlaceType-ferryPort a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Ferry port"@en;
+    schema:name "Ferry port"@en;
+    rdfs:comment "Stop place type 'Ferry port'"@en.
+netex:StopPlaceType-ferryStop a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Ferry stop"@en;
+    schema:name "Ferry stop"@en;
+    rdfs:comment "Stop place type 'Ferry stop'"@en.
+netex:StopPlaceType-harbourPort a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Harbour port"@en;
+    schema:name "Harbour port"@en;
+    rdfs:comment "Stop place type 'Harbour port'"@en.
+netex:StopPlaceType-liftStation a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Lift station"@en;
+    schema:name "Lift station"@en;
+    rdfs:comment "Stop place type 'Lift station'"@en.
+netex:StopPlaceType-metroStation a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Metro station"@en;
+    schema:name "Metro station"@en;
+    rdfs:comment "Stop place type 'Metro station'"@en.
+netex:StopPlaceType-onstreetBus a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Onstreet bus"@en;
+    schema:name "Onstreet bus"@en;
+    rdfs:comment "Stop place type 'Onstreet bus'"@en.
+netex:StopPlaceType-onstreetTram a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Onstreet tram"@en;
+    schema:name "Onstreet tram"@en;
+    rdfs:comment "Stop place type 'Onstreet tram'"@en.
+netex:StopPlaceType-other a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Other"@en;
+    schema:name "Other"@en;
+    rdfs:comment "Stop place type 'Other'"@en.
+netex:StopPlaceType-railStation a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Rail station"@en;
+    schema:name "Rail station"@en;
+    rdfs:comment "Stop place type 'Rail station'"@en.
+netex:StopPlaceType-taxiRank a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Taxi rank"@en;
+    schema:name "Taxi rank"@en;
+    rdfs:comment "Stop place type 'Taxi rank'"@en.
+netex:StopPlaceType-tramStation a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Tram station"@en;
+    schema:name "Tram station"@en;
+    rdfs:comment "Stop place type 'Tram station'"@en.
+netex:StopPlaceType-vehicleRailInterchange a netex:StopPlaceType;
+    status:term_status "unstable"@en;
+    rdfs:label "Vehicle rail interchange"@en;
+    schema:name "Vehicle rail interchange"@en;
+    rdfs:comment "Stop place type 'Vehicle rail interchange'"@en.
+netex:StopPlaceWeight a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Stop place weight"@en;
+    schema:name "Stop place weight"@en.
+netex:StopPlaceWeight-international a netex:StopPlaceWeight;
+    status:term_status "unstable"@en;
+    rdfs:label "International"@en;
+    schema:name "International"@en;
+    rdfs:comment "Stop place weight 'International'"@en.
+netex:StopPlaceWeight-local a netex:StopPlaceWeight;
+    status:term_status "unstable"@en;
+    rdfs:label "Local"@en;
+    schema:name "Local"@en;
+    rdfs:comment "Stop place weight 'Local'"@en.
+netex:StopPlaceWeight-national a netex:StopPlaceWeight;
+    status:term_status "unstable"@en;
+    rdfs:label "National"@en;
+    schema:name "National"@en;
+    rdfs:comment "Stop place weight 'National'"@en.
+netex:StopPlaceWeight-regional a netex:StopPlaceWeight;
+    status:term_status "unstable"@en;
+    rdfs:label "Regional"@en;
+    schema:name "Regional"@en;
+    rdfs:comment "Stop place weight 'Regional'"@en.
+netex:TransportMode a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Transport mode"@en;
+    schema:name "Transport mode"@en.
+netex:TransportMode-air a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Air"@en;
+    schema:name "Air"@en;
+    rdfs:comment "Transport mode 'Air'"@en.
+netex:TransportMode-all a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "All"@en;
+    schema:name "All"@en;
+    rdfs:comment "Transport mode 'All'"@en.
+netex:TransportMode-anyMode a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Any mode"@en;
+    schema:name "Any mode"@en;
+    rdfs:comment "Transport mode 'Any mode'"@en.
+netex:TransportMode-bus a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Bus"@en;
+    schema:name "Bus"@en;
+    rdfs:comment "Transport mode 'Bus'"@en.
+netex:TransportMode-cableway a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Cableway"@en;
+    schema:name "Cableway"@en;
+    rdfs:comment "Transport mode 'Cableway'"@en.
+netex:TransportMode-coach a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Coach"@en;
+    schema:name "Coach"@en;
+    rdfs:comment "Transport mode 'Coach'"@en.
+netex:TransportMode-ferry a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Ferry"@en;
+    schema:name "Ferry"@en;
+    rdfs:comment "Transport mode 'Ferry'"@en.
+netex:TransportMode-funicular a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Funicular"@en;
+    schema:name "Funicular"@en;
+    rdfs:comment "Transport mode 'Funicular'"@en.
+netex:TransportMode-intercityRail a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Intercity rail"@en;
+    schema:name "Intercity rail"@en;
+    rdfs:comment "Transport mode 'Intercity rail'"@en.
+netex:TransportMode-lift a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Lift"@en;
+    schema:name "Lift"@en;
+    rdfs:comment "Transport mode 'Lift'"@en.
+netex:TransportMode-metro a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Metro"@en;
+    schema:name "Metro"@en;
+    rdfs:comment "Transport mode 'Metro'"@en.
+netex:TransportMode-other a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Other"@en;
+    schema:name "Other"@en;
+    rdfs:comment "Transport mode 'Other'"@en.
+netex:TransportMode-rail a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Rail"@en;
+    schema:name "Rail"@en;
+    rdfs:comment "Transport mode 'Rail'"@en.
+netex:TransportMode-selfDrive a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Self drive"@en;
+    schema:name "Self drive"@en;
+    rdfs:comment "Transport mode 'Self drive'"@en.
+netex:TransportMode-snowAndIce a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Snow and ice"@en;
+    schema:name "Snow and ice"@en;
+    rdfs:comment "Transport mode 'Snow and ice'"@en.
+netex:TransportMode-taxi a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Taxi"@en;
+    schema:name "Taxi"@en;
+    rdfs:comment "Transport mode 'Taxi'"@en.
+netex:TransportMode-tram a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Tram"@en;
+    schema:name "Tram"@en;
+    rdfs:comment "Transport mode 'Tram'"@en.
+netex:TransportMode-trolleyBus a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Trolley bus"@en;
+    schema:name "Trolley bus"@en;
+    rdfs:comment "Transport mode 'Trolley bus'"@en.
+netex:TransportMode-unknown a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Unknown"@en;
+    schema:name "Unknown"@en;
+    rdfs:comment "Transport mode 'Unknown'"@en.
+netex:TransportMode-urbanRail a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Urban rail"@en;
+    schema:name "Urban rail"@en;
+    rdfs:comment "Transport mode 'Urban rail'"@en.
+netex:TransportMode-water a netex:TransportMode;
+    status:term_status "unstable"@en;
+    rdfs:label "Water"@en;
+    schema:name "Water"@en;
+    rdfs:comment "Transport mode 'Water'"@en.
+netex:Weighting a rdfs:Class;
+    status:term_status "unstable"@en;
+    rdfs:label "Weighting"@en;
+    schema:name "Weighting"@en.
+netex:Weighting-interchangeAllowed a netex:Weighting;
+    status:term_status "unstable"@en;
+    rdfs:label "Interchange allowed"@en;
+    schema:name "Interchange allowed"@en;
+    rdfs:comment "Weighting 'Interchange allowed'"@en.
+netex:Weighting-noInterchange a netex:Weighting;
+    status:term_status "unstable"@en;
+    rdfs:label "No interchange"@en;
+    schema:name "No interchange"@en;
+    rdfs:comment "Weighting 'No interchange'"@en.
+netex:Weighting-preferredInterchange a netex:Weighting;
+    status:term_status "unstable"@en;
+    rdfs:label "Preferred interchange"@en;
+    schema:name "Preferred interchange"@en;
+    rdfs:comment "Weighting 'Preferred interchange'"@en.
+netex:Weighting-recommendedInterchange a netex:Weighting;
+    status:term_status "unstable"@en;
+    rdfs:label "Recommended interchange"@en;
+    schema:name "Recommended interchange"@en;
+    rdfs:comment "Weighting 'Recommended interchange'"@en.

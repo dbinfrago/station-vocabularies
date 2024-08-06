@@ -1,0 +1,2674 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix schema: <http://schema.org/>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix tmfac: <https://w3id.org/transmodel/facilities#>.
+@prefix tmorg: <https://w3id.org/transmodel/organisations#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix netex: <https://lod.bahnhof.de/vocabulary/netex/>.
+@prefix bahnhof: <https://lod.bahnhof.de/vocabulary/db/>.
+
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Access"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Access
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//AccessSpace"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:AccessSpace
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//AccessVehicleEquipment"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:AccessVehicleEquipment
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//AccessibilityAssessment"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:AccessibilityAssessment
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//AssistanceService"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:AssistanceService
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Authority"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Authority
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//BoardingPosition"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:BoardingPosition
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Branding"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Branding
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Centroid"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Centroid
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//CheckConstraint"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:CheckConstraint
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//ClassOfUse"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:ClassOfUse
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Entity"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Entity
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Entrance"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Entrance
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//EntranceEquipment"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:EntranceEquipment
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//EquipmentPlace"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:EquipmentPlace
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//EscalatorEquipment"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:EscalatorEquipment
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:branding;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "BrandingRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:depth;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "Depth"
+]
+], [
+  rr:predicate netex:description;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Description"
+]
+], [
+  rr:predicate netex:directionOfUse;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/DirectionOfUse-{tokenize(DirectionOfUse/text(), ' ')}"
+]
+], [
+  rr:predicate netex:dogsMustBeCarried;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "DogsMustBeCarried"
+]
+], [
+  rr:predicate netex:energySaving;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "EnergySaving"
+]
+], [
+  rr:predicate netex:escalatorWithLanding;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "EscalatorWithLanding"
+]
+], [
+  rr:predicate netex:handrailHeight;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "HandrailHeight"
+]
+], [
+  rr:predicate netex:handrailType;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/Lighting-{tokenize(HandrailType/text(), ' ')}"
+]
+], [
+  rr:predicate netex:height;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "Height"
+]
+], [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate netex:image;
+  rr:objectMap [
+  rr:datatype xsd:anyURI;
+  rr:termType rr:Literal;
+  rml:reference "Image"
+]
+], [
+  rr:predicate netex:lowerHandrailHeight;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "LowerHandrailHeight"
+]
+], [
+  rr:predicate netex:monitoringRemoteControl;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "MonitoringRemoteControl"
+]
+], [
+  rr:predicate netex:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate tmfac:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate foaf:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate schema:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate netex:note;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Note"
+]
+], [
+  rr:predicate netex:numberOfSteps;
+  rr:objectMap [
+  rr:datatype xsd:positiveInteger;
+  rr:termType rr:Literal;
+  rml:reference "NumberOfSteps"
+]
+], [
+  rr:predicate netex:outOfService;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "OutOfService"
+]
+], [
+  rr:predicate netex:passengersPerMinute;
+  rr:objectMap [
+  rr:datatype xsd:integer;
+  rr:termType rr:Literal;
+  rml:reference "PassengersPerMinute"
+]
+], [
+  rr:predicate netex:privateCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PrivateCode"
+]
+], [
+  rr:predicate netex:publicCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PublicCode"
+]
+], [
+  rr:predicate netex:relativeWeighting;
+  rr:objectMap [
+  rr:datatype xsd:integer;
+  rr:termType rr:Literal;
+  rml:reference "RelativeWeighting"
+]
+], [
+  rr:predicate netex:safeForGuideDog;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "SafeForGuideDog"
+]
+], [
+  rr:predicate netex:stairRamp;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/StairRamp-{tokenize(StairRamp/text(), ' ')}"
+]
+], [
+  rr:predicate netex:stepColourContrast;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "StepColourContrast"
+]
+], [
+  rr:predicate netex:stepCondition;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/StepCondition-{tokenize(StepCondition/text(), ' ')}"
+]
+], [
+  rr:predicate netex:stepHeight;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "StepHeight"
+]
+], [
+  rr:predicate netex:stepLength;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "StepLength"
+]
+], [
+  rr:predicate netex:tactileActuators;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "TactileActuators"
+]
+], [
+  rr:predicate netex:tactileWriting;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "TactileWriting"
+]
+], [
+  rr:predicate netex:width;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "Width"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Level"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Level
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//LiftEquipment"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:LiftEquipment
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:alarmButton;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "AlarmButton"
+]
+], [
+  rr:predicate netex:attendant;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "Attendant"
+]
+], [
+  rr:predicate netex:audioAnnouncements;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "AudioAnnouncements"
+]
+], [
+  rr:predicate netex:automatic;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "Automatic"
+]
+], [
+  rr:predicate netex:brailleButtons;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "BrailleButtons"
+]
+], [
+  rr:predicate netex:branding;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "BrandingRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:callButtonHeight;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "CallButtonHeight"
+]
+], [
+  rr:predicate netex:depth;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "Depth"
+]
+], [
+  rr:predicate netex:description;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Description"
+]
+], [
+  rr:predicate netex:directionButtonHeight;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "DirectionButtonHeight"
+]
+], [
+  rr:predicate netex:directionOfUse;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/DirectionOfUse-{tokenize(DirectionOfUse/text(), ' ')}"
+]
+], [
+  rr:predicate netex:externalFloorSelection;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "ExternalFloorSelection"
+]
+], [
+  rr:predicate netex:groundMarkAlignedWithButton;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "GroundMarkAlignedWithButton"
+]
+], [
+  rr:predicate netex:handrailHeight;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "HandrailHeight"
+]
+], [
+  rr:predicate netex:handrailType;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/Lighting-{tokenize(HandrailType/text(), ' ')}"
+]
+], [
+  rr:predicate netex:height;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "Height"
+]
+], [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate netex:image;
+  rr:objectMap [
+  rr:datatype xsd:anyURI;
+  rr:termType rr:Literal;
+  rml:reference "Image"
+]
+], [
+  rr:predicate netex:internalHeight;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "InternalHeight"
+]
+], [
+  rr:predicate netex:internalWidth;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "InternalWidth"
+]
+], [
+  rr:predicate netex:lowerHandrailHeight;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "LowerHandrailHeight"
+]
+], [
+  rr:predicate netex:magneticInductionLoop;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "MagneticInductionLoop"
+]
+], [
+  rr:predicate netex:maximumLoad;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "MaximumLoad"
+]
+], [
+  rr:predicate netex:mirrorOnOppositeSide;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "MirrorOnOppositeSide"
+]
+], [
+  rr:predicate netex:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate tmfac:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate foaf:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate schema:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate netex:note;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Note"
+]
+], [
+  rr:predicate netex:outOfService;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "OutOfService"
+]
+], [
+  rr:predicate netex:passengersPerMinute;
+  rr:objectMap [
+  rr:datatype xsd:integer;
+  rr:termType rr:Literal;
+  rml:reference "PassengersPerMinute"
+]
+], [
+  rr:predicate netex:privateCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PrivateCode"
+]
+], [
+  rr:predicate netex:publicCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PublicCode"
+]
+], [
+  rr:predicate netex:raisedButtons;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "RaisedButtons"
+]
+], [
+  rr:predicate netex:reachedFloorAnnouncement;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "ReachedFloorAnnouncement"
+]
+], [
+  rr:predicate netex:relativeWeighting;
+  rr:objectMap [
+  rr:datatype xsd:integer;
+  rr:termType rr:Literal;
+  rml:reference "RelativeWeighting"
+]
+], [
+  rr:predicate netex:safeForGuideDog;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "SafeForGuideDog"
+]
+], [
+  rr:predicate netex:signageToLift;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "SignageToLift"
+]
+], [
+  rr:predicate netex:suitableForCycles;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "SuitableForCycles"
+]
+], [
+  rr:predicate netex:tactileActuators;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "TactileActuators"
+]
+], [
+  rr:predicate netex:tactileGroundFloorButton;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "TactileGroundFloorButton"
+]
+], [
+  rr:predicate netex:tactileWriting;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "TactileWriting"
+]
+], [
+  rr:predicate netex:throughLoader;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "ThroughLoader"
+]
+], [
+  rr:predicate netex:wheelchairPassable;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "WheelchairPassable"
+]
+], [
+  rr:predicate netex:wheelchairTurningCircle;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "WheelchairTurningCircle"
+]
+], [
+  rr:predicate netex:width;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "Width"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//LocalService"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:LocalService
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Locale"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Locale
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:defaultLanguage;
+  rr:objectMap [
+  rr:datatype xsd:language;
+  rr:termType rr:Literal;
+  rml:reference "DefaultLanguage"
+]
+], [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate netex:timeZone;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "TimeZone"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//NavigationPath"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:NavigationPath
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Operator"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Operator
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Organisation"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Organisation, tmorg:Organisation
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//PassengerInformationEquipment"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:PassengerInformationEquipment
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//PathJunction"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:PathJunction
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//PathLink"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:PathLink
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Point"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Point
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//PostalAddress"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:PostalAddress
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate netex:postCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PostCode"
+]
+], [
+  rr:predicate netex:province;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Province"
+]
+], [
+  rr:predicate netex:street;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Street"
+]
+], [
+  rr:predicate netex:town;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Town"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//PurposeOfGrouping"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:PurposeOfGrouping
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Quay"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Quay, tmfac:Quay, netex:Site
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:accessibilityAssessment;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "AccessibilityAssessment/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:accessMode;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/AccessMode-{tokenize(AccessModes/text(), ' ')}"
+]
+], [
+  rr:predicate netex:alightingUse;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "AlightingUse"
+]
+], [
+  rr:predicate netex:allAreasWheelchairAccessible;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "AllAreasWheelchairAccessible"
+]
+], [
+  rr:predicate netex:boardingPosition;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "boardingPositions/BoardingPosition/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:boardingPosition;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "boardingPositions/BoardingPositionRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:boardingUse;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "BoardingUse"
+]
+], [
+  rr:predicate netex:branding;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "BrandingRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:centroid;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "Centroid/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:checkConstraint;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "checkConstraints/CheckConstraint/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:checkConstraint;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "checkConstraints/CheckConstraintRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:classOfUse;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "ClassOfUseRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:compassBearing;
+  rr:objectMap [
+  rr:datatype xsd:float;
+  rr:termType rr:Literal;
+  rml:reference "CompassBearing"
+]
+], [
+  rr:predicate netex:compassOctant;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/CompassOctant-{tokenize(CompassOctant/text(), ' ')}"
+]
+], [
+  rr:predicate netex:covered;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/Covered-{tokenize(Covered/text(), ' ')}"
+]
+], [
+  rr:predicate netex:crossRoad;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "CrossRoad"
+]
+], [
+  rr:predicate netex:description;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Description"
+]
+], [
+  rr:predicate netex:edgeToTrackCenterDistance;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "EdgeToTrackCenterDistance"
+]
+], [
+  rr:predicate netex:entrance;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "entrances/*[not(ends-with(name(), \"Ref\"))]/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:entrance;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "entrances/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:equipmentPlace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "equipmentPlaces/EquipmentPlace/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:equipmentPlace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "equipmentPlaces/EquipmentPlaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:facility;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "facilities/SiteFacilitySet/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:facility;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "facilities/SiteFacilitySetRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:gated;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/Gated-{tokenize(Gated/text(), ' ')}"
+]
+], [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate netex:image;
+  rr:objectMap [
+  rr:datatype xsd:anyURI;
+  rr:termType rr:Literal;
+  rml:reference "Image"
+]
+], [
+  rr:predicate netex:label;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Label"
+]
+], [
+  rr:predicate netex:landmark;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Landmark"
+]
+], [
+  rr:predicate netex:length;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "Length"
+]
+], [
+  rr:predicate netex:level;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "levels/Level/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:level;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "levels/LevelRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:lighting;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/Lighting-{tokenize(Lighting/text(), ' ')}"
+]
+], [
+  rr:predicate netex:localService;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "localServices/*[not(ends-with(name(), \"Ref\"))]/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:localService;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "localServices/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:member;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "members/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate tmfac:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate foaf:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate schema:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate netex:nameSuffix;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "NameSuffix"
+]
+], [
+  rr:predicate netex:parentQuay;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "ParentQuayRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:parentZone;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "ParentZoneRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:personCapacity;
+  rr:objectMap [
+  rr:datatype xsd:integer;
+  rr:termType rr:Literal;
+  rml:reference "PersonCapacity"
+]
+], [
+  rr:predicate netex:placeEquipment;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "placeEquipments/*[not(ends-with(name(), \"Ref\"))]/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:placeEquipment;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "placeEquipments/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:placeType;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "placeTypes/TypeOfPlaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:plateCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PlateCode"
+]
+], [
+  rr:predicate netex:platformHeight;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "PlatformHeight"
+]
+], [
+  rr:predicate netex:postalAddress;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "PostalAddress/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:privateCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PrivateCode"
+]
+], [
+  rr:predicate netex:projection;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "projections/*[not(ends-with(name(), \"Ref\"))]/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:projection;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "projections/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:publicCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PublicCode"
+]
+], [
+  rr:predicate netex:publicUse;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/PublicUse-{tokenize(PublicUse/text(), ' ')}"
+]
+], [
+  rr:predicate netex:purposeOfGrouping;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "PurposeOfGroupingRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:quayType;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/QuayType-{tokenize(QuayType/text(), ' ')}"
+]
+], [
+  rr:predicate netex:roadAddress;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "RoadAddress/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:shortCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "ShortCode"
+]
+], [
+  rr:predicate netex:shortName;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "ShortName"
+]
+], [
+  rr:predicate netex:site;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "SiteRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:tariffZone;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "tariffZones/TariffZoneRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:transportMode;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/TransportMode-{tokenize(TransportMode/text(), ' ')}"
+]
+], [
+  rr:predicate netex:type;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "types/TypeOfZoneRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:url;
+  rr:objectMap [
+  rr:datatype xsd:anyURI;
+  rr:termType rr:Literal;
+  rml:reference "Url"
+]
+], [
+  rr:predicate foaf:page;
+  rr:objectMap [
+  rr:datatype xsd:anyURI;
+  rr:termType rr:Literal;
+  rml:reference "Url"
+]
+], [
+  rr:predicate netex:width;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "Width"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//RampEquipment"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:RampEquipment
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//RoadAddress"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:RoadAddress
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//SanitaryEquipment"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:SanitaryEquipment
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Site"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Site, tmfac:Site
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//SiteFacilitySet"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:SiteFacilitySet
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//StairFlight"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:StairFlight
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//StaircaseEquipment"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:StaircaseEquipment
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:branding;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "BrandingRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:continuousHandrail;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "ContinuousHandrail"
+]
+], [
+  rr:predicate netex:depth;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "Depth"
+]
+], [
+  rr:predicate netex:description;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Description"
+]
+], [
+  rr:predicate netex:directionOfUse;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/DirectionOfUse-{tokenize(DirectionOfUse/text(), ' ')}"
+]
+], [
+  rr:predicate netex:flight;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "flights/StairFlight/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:handrailHeight;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "HandrailHeight"
+]
+], [
+  rr:predicate netex:handrailType;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/Lighting-{tokenize(HandrailType/text(), ' ')}"
+]
+], [
+  rr:predicate netex:height;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "Height"
+]
+], [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate netex:image;
+  rr:objectMap [
+  rr:datatype xsd:anyURI;
+  rr:termType rr:Literal;
+  rml:reference "Image"
+]
+], [
+  rr:predicate netex:lowerHandrailHeight;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "LowerHandrailHeight"
+]
+], [
+  rr:predicate netex:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate tmfac:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate foaf:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate schema:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate netex:note;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Note"
+]
+], [
+  rr:predicate netex:numberOfFlights;
+  rr:objectMap [
+  rr:datatype xsd:integer;
+  rr:termType rr:Literal;
+  rml:reference "NumberOfFlights"
+]
+], [
+  rr:predicate netex:numberOfSteps;
+  rr:objectMap [
+  rr:datatype xsd:positiveInteger;
+  rr:termType rr:Literal;
+  rml:reference "NumberOfSteps"
+]
+], [
+  rr:predicate netex:outOfService;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "OutOfService"
+]
+], [
+  rr:predicate netex:passengersPerMinute;
+  rr:objectMap [
+  rr:datatype xsd:integer;
+  rr:termType rr:Literal;
+  rml:reference "PassengersPerMinute"
+]
+], [
+  rr:predicate netex:privateCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PrivateCode"
+]
+], [
+  rr:predicate netex:publicCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PublicCode"
+]
+], [
+  rr:predicate netex:relativeWeighting;
+  rr:objectMap [
+  rr:datatype xsd:integer;
+  rr:termType rr:Literal;
+  rml:reference "RelativeWeighting"
+]
+], [
+  rr:predicate netex:safeForGuideDog;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "SafeForGuideDog"
+]
+], [
+  rr:predicate netex:spiralStair;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "SpiralStair"
+]
+], [
+  rr:predicate netex:stairRamp;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/StairRamp-{tokenize(StairRamp/text(), ' ')}"
+]
+], [
+  rr:predicate netex:stepColourContrast;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "StepColourContrast"
+]
+], [
+  rr:predicate netex:stepCondition;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/StepCondition-{tokenize(StepCondition/text(), ' ')}"
+]
+], [
+  rr:predicate netex:stepHeight;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "StepHeight"
+]
+], [
+  rr:predicate netex:stepLength;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "StepLength"
+]
+], [
+  rr:predicate netex:tactileWriting;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "TactileWriting"
+]
+], [
+  rr:predicate netex:width;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "Width"
+]
+], [
+  rr:predicate netex:withoutRiser;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "WithoutRiser"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//StopPlace"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:StopPlace, tmfac:StopPlace, netex:Site
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:access;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "accesses/Access/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:access;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "accesses/AccessRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:accessibilityAssessment;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "AccessibilityAssessment/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:accessMode;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/AccessMode-{tokenize(AccessModes/text(), ' ')}"
+]
+], [
+  rr:predicate netex:accessSpace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "accessSpaces/AccessSpace/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:accessSpace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "accessSpaces/AccessSpaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:additionalTopographicPlace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "additionalTopographicPlaces/TopographicPlaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:adjacentSite;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "adjacentSites/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:allAreasWheelchairAccessible;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "AllAreasWheelchairAccessible"
+]
+], [
+  rr:predicate netex:atCentre;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "AtCentre"
+]
+], [
+  rr:predicate netex:authority;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "AuthorityRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:borderCrossing;
+  rr:objectMap [
+  rr:datatype xsd:boolean;
+  rr:termType rr:Literal;
+  rml:reference "BorderCrossing"
+]
+], [
+  rr:predicate netex:branding;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "BrandingRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:centroid;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "Centroid/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:containedInPlace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "ContainedInPlaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:covered;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/Covered-{tokenize(Covered/text(), ' ')}"
+]
+], [
+  rr:predicate netex:crossRoad;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "CrossRoad"
+]
+], [
+  rr:predicate netex:description;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Description"
+]
+], [
+  rr:predicate netex:entrance;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "entrances/*[not(ends-with(name(), \"Ref\"))]/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:entrance;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "entrances/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:equipmentPlace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "equipmentPlaces/EquipmentPlace/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:equipmentPlace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "equipmentPlaces/EquipmentPlaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate bahnhof:evaId;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "keyList/KeyValue[Key=\"EVA\"]/Value"
+]
+], [
+  rr:predicate wdt:P954;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "keyList/KeyValue[Key=\"EVA\"]/Value"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "keyList/KeyValue[Key=\"EVA\"]/Value"
+]
+], [
+  rr:predicate netex:facility;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "facilities/SiteFacilitySet/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:facility;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "facilities/SiteFacilitySetRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:gated;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/Gated-{tokenize(Gated/text(), ' ')}"
+]
+], [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate bahnhof:ifoptStopId;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate wdt:P12393;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate netex:image;
+  rr:objectMap [
+  rr:datatype xsd:anyURI;
+  rr:termType rr:Literal;
+  rml:reference "Image"
+]
+], [
+  rr:predicate netex:landmark;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Landmark"
+]
+], [
+  rr:predicate netex:level;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "levels/Level/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:level;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "levels/LevelRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:lighting;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/Lighting-{tokenize(Lighting/text(), ' ')}"
+]
+], [
+  rr:predicate netex:limitedUse;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/LimitedUse-{tokenize(LimitedUse/text(), ' ')}"
+]
+], [
+  rr:predicate netex:locale;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "Locale/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:localService;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "localServices/*[not(ends-with(name(), \"Ref\"))]/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:localService;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "localServices/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:mainTerminusForPlace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "mainTerminusForPlaces/TopographicPlaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:member;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "members/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate tmfac:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate foaf:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate schema:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate netex:nameSuffix;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "NameSuffix"
+]
+], [
+  rr:predicate netex:navigationPath;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "navigationPaths/NavigationPath/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:navigationPath;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "navigationPaths/NavigationPathRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:operator;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "OperatorRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:organisation;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "OrganisationRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:parentSite;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "ParentSiteRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:parentZone;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "ParentZoneRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:pathJunction;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "pathJunctions/PathJunction/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:pathJunction;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "pathJunctions/PathJunctionRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:pathLink;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "pathLinks/PathLink/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:pathLink;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "pathLinks/PathLinkRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:personCapacity;
+  rr:objectMap [
+  rr:datatype xsd:integer;
+  rr:termType rr:Literal;
+  rml:reference "PersonCapacity"
+]
+], [
+  rr:predicate netex:placeEquipment;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "placeEquipments/*[not(ends-with(name(), \"Ref\"))]/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:placeEquipment;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "placeEquipments/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:placeType;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "placeTypes/TypeOfPlaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:postalAddress;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "PostalAddress/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:privateCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PrivateCode"
+]
+], [
+  rr:predicate netex:projection;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "projections/*[not(ends-with(name(), \"Ref\"))]/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:projection;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "projections/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:publicCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PublicCode"
+]
+], [
+  rr:predicate netex:publicUse;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/PublicUse-{tokenize(PublicUse/text(), ' ')}"
+]
+], [
+  rr:predicate netex:purposeOfGrouping;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "PurposeOfGroupingRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:quay;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "quays/Quay/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:quay;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "quays/QuayRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate bahnhof:ril100Id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "keyList/KeyValue[Key=\"RIL\"]/Value"
+]
+], [
+  rr:predicate wdt:P8671;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "keyList/KeyValue[Key=\"RIL\"]/Value"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "keyList/KeyValue[Key=\"RIL\"]/Value"
+]
+], [
+  rr:predicate netex:roadAddress;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "RoadAddress/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:servedPlace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "servedPlaces/TopographicPlaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:shortName;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "ShortName"
+]
+], [
+  rr:predicate netex:siteType;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/SiteType-{tokenize(SiteType/text(), ' ')}"
+]
+], [
+  rr:predicate bahnhof:stadaId;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PrivateCode"
+]
+], [
+  rr:predicate wdt:P12282;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PrivateCode"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PrivateCode"
+]
+], [
+  rr:predicate netex:stopPlaceType;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/StopPlaceType-{tokenize(StopPlaceType/text(), ' ')}"
+]
+], [
+  rr:predicate netex:stopPlaceWeight;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/StopPlaceWeight-{tokenize(StopPlaceWeight/text(), ' ')}"
+]
+], [
+  rr:predicate netex:tariffZone;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "tariffZones/TariffZoneRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:topographicPlace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "TopographicPlaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:transportMode;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/TransportMode-{tokenize(TransportMode/text(), ' ')}"
+]
+], [
+  rr:predicate netex:transportOrganisation;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "TransportOrganisationRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:type;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "types/TypeOfZoneRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:unlocalisedEquipment;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "unlocalisedEquipments/*[not(ends-with(name(), \"Ref\"))]/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:unlocalisedEquipment;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "unlocalisedEquipments/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:url;
+  rr:objectMap [
+  rr:datatype xsd:anyURI;
+  rr:termType rr:Literal;
+  rml:reference "Url"
+]
+], [
+  rr:predicate foaf:page;
+  rr:objectMap [
+  rr:datatype xsd:anyURI;
+  rr:termType rr:Literal;
+  rml:reference "Url"
+]
+], [
+  rr:predicate netex:vehicleStoppingPlace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "vehicleStoppingPlaces/VehicleStoppingPlace/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:vehicleStoppingPlace;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "vehicleStoppingPlaces/VehicleStoppingPlaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:weighting;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rr:template "https://lod.bahnhof.de/vocabulary/netex/Weighting-{tokenize(Weighting/text(), ' ')}"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//TariffZone"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:TariffZone
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//TopographicPlace"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:TopographicPlace
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:branding;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "BrandingRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate tmfac:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate foaf:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate schema:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate netex:shortName;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "ShortName"
+]
+], [
+  rr:predicate netex:description;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Description"
+]
+], [
+  rr:predicate netex:purposeOfGrouping;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "PurposeOfGroupingRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:privateCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PrivateCode"
+]
+], [
+  rr:predicate netex:member;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "members/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:type;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "types/TypeOfZoneRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:centroid;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "Centroid/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:projection;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "projections/*[not(ends-with(name(), \"Ref\"))]/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:projection;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "projections/*[ends-with(name(), \"Ref\")]/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:parentZone;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "ParentZoneRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:placeType;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "placeTypes/TypeOfPlaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:containedIn;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "containedIn/TopographicPlaceRef/encode-for-uri(@ref)"
+]
+], [
+  rr:predicate netex:access;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "accesses/Access/encode-for-uri(@id)"
+]
+], [
+  rr:predicate netex:access;
+  rr:objectMap [
+  rr:termType rr:IRI;
+  rml:reference "accesses/AccessRef/encode-for-uri(@ref)"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//TransportOrganisation"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:TransportOrganisation
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//TravelatorEquipment"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:TravelatorEquipment
+];
+    rr:predicateObjectMap [
+  rr:predicate netex:id;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+], [
+  rr:predicate dct:identifier;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "@id"
+]
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//TypeOfPlace"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:TypeOfPlace
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//TypeOfZone"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:TypeOfZone
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//VehicleStoppingPlace"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:VehicleStoppingPlace
+].
+[ a rr:TriplesMap ] rml:logicalSource [
+  rml:source "input.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "//Zone"
+];
+    rr:subjectMap [
+  rml:reference "encode-for-uri(@id)";
+  rr:class netex:Zone
+].

@@ -1,0 +1,64 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix status: <http://www.w3.org/2003/06/sw-vocab-status/ns#>.
+@prefix schema: <http://schema.org/>.
+@prefix wdt: <http://www.wikidata.org/prop/direct/>.
+@prefix tmfac: <https://w3id.org/transmodel/facilities#>.
+@prefix tmorg: <https://w3id.org/transmodel/organisations#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix netex: <https://lod.bahnhof.de/vocabulary/netex/>.
+@prefix bahnhof: <https://lod.bahnhof.de/vocabulary/db/>.
+
+bahnhof:domainInDBStationsProfile a owl:ObjectProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Domain in db stations profile"@en;
+    schema:name "Domain in db stations profile"@en;
+    rdfs:comment "Domain for which this property is expected to be present (at least on some entities) in datasets conforming to the DB stations NeTEx profile."@en;
+    rdfs:range netex:Entity;
+    rdfs:subPropertyOf schema:domainIncludes.
+bahnhof:evaId a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Eva id"@en;
+    schema:name "Eva id"@en;
+    rdfs:comment "Eva id of entity."@en;
+    rdfs:range xsd:string;
+    owl:sameAs wdt:P954;
+    rdfs:subPropertyOf dct:identifier;
+    schema:domainIncludes netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+bahnhof:ifoptStopId a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Ifopt stop id"@en;
+    schema:name "Ifopt stop id"@en;
+    rdfs:comment "Ifopt stop id of entity."@en;
+    rdfs:range xsd:string;
+    owl:sameAs wdt:P12393;
+    rdfs:subPropertyOf dct:identifier;
+    schema:domainIncludes netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+bahnhof:ril100Id a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Ril 100 id"@en;
+    schema:name "Ril 100 id"@en;
+    rdfs:comment "Ril 100 id of entity."@en;
+    rdfs:range xsd:string;
+    owl:sameAs wdt:P8671;
+    rdfs:subPropertyOf dct:identifier;
+    schema:domainIncludes netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
+bahnhof:stadaId a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Stada id"@en;
+    schema:name "Stada id"@en;
+    rdfs:comment "Stada id of entity."@en;
+    rdfs:range xsd:string;
+    owl:sameAs wdt:P12282;
+    rdfs:subPropertyOf dct:identifier;
+    schema:domainIncludes netex:StopPlace;
+    bahnhof:domainInDBStationsProfile netex:StopPlace.
