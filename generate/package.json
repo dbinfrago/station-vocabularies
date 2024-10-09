@@ -15,17 +15,17 @@
   "type": "module",
   "dependencies": {
     "lodash": "^4.17.21",
-    "n3": "^1.20.4"
+    "n3": "^1.22.3"
   },
   "devDependencies": {
-    "@types/lodash": "^4.17.7",
-    "@types/n3": "^1.16.4",
-    "@types/node": "^20.14.14",
+    "@types/lodash": "^4.17.10",
+    "@types/n3": "^1.21.1",
+    "@types/node": "^20.16.11",
     "depcheck": "^1.4.7",
     "ts-node": "^10.9.2",
     "ts-standard": "^12.0.2",
-    "tslib": "^2.6.3",
-    "typescript": "^5.5.4"
+    "tslib": "^2.7.0",
+    "typescript": "^5.6.3"
   },
   "engines": {
     "node": ">=20"
