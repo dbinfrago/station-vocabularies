@@ -58,6 +58,13 @@
   rr:class netex:AccessVehicleEquipment
 ];
     rr:predicateObjectMap [
+  rr:predicate netex:bearingCapacity;
+  rr:objectMap [
+  rr:datatype xsd:decimal;
+  rr:termType rr:Literal;
+  rml:reference "BearingCapacity"
+]
+], [
   rr:predicate netex:id;
   rr:objectMap [
   rr:datatype xsd:string;
@@ -70,6 +77,48 @@
   rr:datatype xsd:string;
   rr:termType rr:Literal;
   rml:reference "@id"
+]
+], [
+  rr:predicate netex:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate tmfac:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate foaf:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate schema:name;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "Name"
+]
+], [
+  rr:predicate netex:privateCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PrivateCode"
+]
+], [
+  rr:predicate netex:publicCode;
+  rr:objectMap [
+  rr:datatype xsd:string;
+  rr:termType rr:Literal;
+  rml:reference "PublicCode"
 ]
 ].
 [ a rr:TriplesMap ] rml:logicalSource [

@@ -1,6 +1,7 @@
 import properties from '../properties/index.js'
 import { transmodelFacilitiesCreator, transmodelOrganisationsCreator } from '../uris.js'
 import { Class, createClass, createPropertyAssertion as a } from './_util.js'
+import { AccessVehicleEquipment } from './entities/access-vehicle-equipment.js'
 import { EscalatorEquipment } from './entities/escalator-equipment.js'
 import { LiftEquipment } from './entities/lift-equipment.js'
 import { StaircaseEquipment } from './entities/staircase-equipment.js'
@@ -15,7 +16,7 @@ const classes: Record<string, Class> = {
 
   accessSpace: createClass('AccessSpace', [a(properties.id)]),
 
-  accessVehicleEquipment: createClass('AccessVehicleEquipment', [a(properties.id)]),
+  accessVehicleEquipment: AccessVehicleEquipment,
 
   assistanceService: createClass('AssistanceService', [a(properties.id)]),
 

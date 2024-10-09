@@ -20,6 +20,7 @@ const properties: Record<string, Property> = {
   audioAnnouncements: createBooleanProperty('audioAnnouncements', { description: 'Flag indicating this entity has audio announcements (e.g. in a lift).' }),
   authority: createProperty('authority', { netexClassId: 'Authority' }, { netexAttributes: [{ name: 'AuthorityRef', isRef: true }] }),
   automatic: createBooleanProperty('automatic', { description: 'Flag indicating if this entity operates automatically (e.g. in a lift).' }),
+  bearingCapacity: createDecimalProperty('bearingCapacity', { description: 'Maximum bearing capacity of entity, in kilograms.' }),
   boardingPosition: createProperty('boardingPosition', { netexClassId: 'BoardingPosition' }, { parserConfigs: [{ type: 'IRI', format: { reference: 'boardingPositions/BoardingPosition/encode-for-uri(@id)' } }, { type: 'IRI', format: { reference: 'boardingPositions/BoardingPositionRef/encode-for-uri(@ref)' } }] }),
   boardingUse: createBooleanProperty('boardingUse'),
   borderCrossing: createBooleanProperty('borderCrossing', { description: 'Flag indicating if the entity (usually a stop place) is a border crossing.' }),

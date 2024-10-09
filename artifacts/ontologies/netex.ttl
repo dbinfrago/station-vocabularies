@@ -323,6 +323,14 @@ netex:automatic a owl:DatatypeProperty;
     rdfs:comment "Flag indicating if this entity operates automatically (e.g. in a lift)."@en;
     rdfs:range xsd:boolean;
     schema:domainIncludes netex:LiftEquipment.
+netex:bearingCapacity a owl:DatatypeProperty;
+    status:term_status "unstable"@en;
+    rdfs:label "Bearing capacity"@en;
+    schema:name "Bearing capacity"@en;
+    rdfs:comment "Maximum bearing capacity of entity, in kilograms."@en;
+    rdfs:range xsd:decimal;
+    schema:domainIncludes netex:AccessVehicleEquipment;
+    bahnhof:domainInDBStationsProfile netex:AccessVehicleEquipment.
 netex:boardingPosition a owl:ObjectProperty;
     status:term_status "unstable"@en;
     rdfs:label "Boarding position"@en;
@@ -738,8 +746,8 @@ netex:name a owl:DatatypeProperty;
     rdfs:comment "Name of entity."@en;
     rdfs:range xsd:string;
     owl:sameAs tmfac:name, foaf:name, schema:name;
-    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace, netex:TopographicPlace;
-    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace.
+    schema:domainIncludes netex:AccessVehicleEquipment, netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace, netex:TopographicPlace;
+    bahnhof:domainInDBStationsProfile netex:AccessVehicleEquipment, netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace.
 netex:nameSuffix a owl:DatatypeProperty;
     status:term_status "unstable"@en;
     rdfs:label "Name suffix"@en;
@@ -901,8 +909,8 @@ netex:privateCode a owl:DatatypeProperty;
     schema:name "Private code"@en;
     rdfs:comment "A private code that uniquely identifies the entity. May be used for inter-operating with other (legacy) systems."@en;
     rdfs:range xsd:string;
-    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace, netex:TopographicPlace;
-    bahnhof:domainInDBStationsProfile netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace.
+    schema:domainIncludes netex:AccessVehicleEquipment, netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace, netex:TopographicPlace;
+    bahnhof:domainInDBStationsProfile netex:AccessVehicleEquipment, netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace.
 netex:projection a owl:ObjectProperty;
     status:term_status "unstable"@en;
     rdfs:label "Projection"@en;
@@ -923,7 +931,7 @@ netex:publicCode a owl:DatatypeProperty;
     schema:name "Public code"@en;
     rdfs:comment "A code which may be publicly displayed on/in/around the entity to identify it."@en;
     rdfs:range xsd:string;
-    schema:domainIncludes netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace.
+    schema:domainIncludes netex:AccessVehicleEquipment, netex:EscalatorEquipment, netex:LiftEquipment, netex:Quay, netex:StaircaseEquipment, netex:StopPlace.
 netex:publicUse a owl:ObjectProperty;
     status:term_status "unstable"@en;
     rdfs:label "Public use"@en;
