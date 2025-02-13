@@ -8,8 +8,8 @@
 
 Title (Status\*) | Description | Preferred prefix | Base URI\* | Download\*
 ---------------- | ----------- | ---------------- | ---------- | ----------
-**NeTEx fixed object vocabulary** (experimental) | Linked data ontology for representing [NeTEx](https://netex-cen.eu)/[Transmodel](https://transmodel-cen.eu) datasets, with focus on the so-called "fixed object model" – a successor to the former IFOPT standard – which can be used to describe railway stations, station equipments, points of interest, and more. See [_design philosophy_](#design-philosophy) for more details. | `netex` or `netexFO` | `https//lod.bahnhof.de/ vocabulary/netex` | [here](https://dbinfrago.github.io/station-vocabularies/ontologies/netex.ttl)
-**DB station vocabulary** (experimental) | Linked data ontology containing Deutsche Bahn specific properties which are not part of Transmodel/NeTEx (e.g. DB station identifiers). | `bahnhof` | `https//lod.bahnhof.de/ vocabulary/db` | [here](https://dbinfrago.github.io/station-vocabularies/ontologies/db.ttl)
+**NeTEx fixed object vocabulary** (experimental) | Linked data ontology for representing [NeTEx](https://netex-cen.eu)/[Transmodel](https://transmodel-cen.eu) datasets, with focus on the so-called "fixed object model" – a successor to the former IFOPT standard – which can be used to describe railway stations, station equipments, points of interest, and more. See [_design philosophy_](#design-philosophy) for more details. | `netex` or `netexFO` | `https://lod.bahnhof.de/vocabulary/netex` | [here](https://dbinfrago.github.io/station-vocabularies/ontologies/netex.ttl)
+**DB station vocabulary** (experimental) | Linked data ontology containing Deutsche Bahn specific properties which are not part of Transmodel/NeTEx (e.g. DB station identifiers). | `bahnhof` | `https://lod.bahnhof.de/vocabulary/db` | [here](https://dbinfrago.github.io/station-vocabularies/ontologies/db.ttl)
 
 \*see [caveats](#caveats)
 
